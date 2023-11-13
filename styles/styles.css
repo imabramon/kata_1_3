@@ -1,0 +1,163 @@
+@import url("../fonts/TTLakes/stylesheet.css");
+
+.body{
+    background-color: #F8F8F8;
+}
+
+.page-header{
+    width: 100%;
+    height: 88px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+.page-header__nav-button {
+    margin-right: 17px;
+}
+
+.page-header__aside-nav{
+
+}
+
+.page-header__logo-wrapper {
+    position: relative;
+    margin-right: 39px;
+}
+
+.page-header__logo-wrapper::after {
+    position: absolute;
+    top: calc(50% - 16px);
+    right: -16px;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 32px;
+    background: url("../img/divider.svg") no-repeat;
+}
+
+.aside-nav-list{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.logo {
+    width: 96.55px;
+    height: 50.81px;
+}
+
+
+.section {
+    font-family: 'TT Lakes';
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section__header {
+    margin-bottom: 24px;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    display: block;
+    height: 40px;
+    width: 4px;
+    background: url("../img/highlight.svg");
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.section__nav {
+    margin-bottom: 24px;
+}
+
+.section__list{
+
+}
+
+.section__text-content{
+    margin-bottom: 16px;
+}
+
+.content{
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-content--wrapped{
+    height: 90px;
+    overflow: hidden;
+}
+
+.nav-list {
+    display: flex;
+    overflow-y: hidden;
+    width: 100%;
+    height: 40px;
+}
+
+.nav-list::-webkit-scrollbar{
+    display: none;
+}
+.nav-list__item {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+.nav-list__button {
+    display: block;
+    padding: 8px 7px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    border-radius: 6px;
+    color: #7E7E82;
+    height: 40px;
+    width: max-content;
+    margin-left: 16px;
+}
+.nav-list__button--selected {
+    border: #B8FFEC solid;
+    background-color: white;
+}
+
+.paragraph{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.content__more-button{
+    margin-bottom: 16px;
+}
+
+.more-button {
+    display: flex;
+    align-items: center;
+}
+.more-button__icon {
+    margin-right: 8px;
+}
+.more-button__title {
+    font-weight: 500px;
+}

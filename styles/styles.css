@@ -14,7 +14,7 @@
 }
 
 .page-header__aside-nav{
-    margin-right: 24px;
+    margin-right: 24px; /* TODO: убрать по идее есть для этого падинг но не отображается*/
 }
 
 .page-header__additional-aside{
@@ -62,7 +62,7 @@
     flex-direction: row;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .aside-nav-list--no-mobile-visible{
         display: none;
     }
@@ -105,6 +105,21 @@
     margin-bottom: 24px;
 }
 
+.section__photo{
+
+}
+
+@media (min-width: 768px) {
+    .section__photo{
+        display: block;
+        width: 360px;
+        height: 208px;
+        margin-left: 48PX;
+        /* TODO: Правильное значение 25px но из-за */
+        margin-right: 20px; 
+    }
+}
+
 .header {
     font-weight: bold;
     font-size: 28px;
@@ -123,6 +138,11 @@
     top: 0px;
     left: 0px;
 }
+
+.section{
+    width: 100%;
+}
+
 .section__nav {
     margin-bottom: 24px;
 }
@@ -141,6 +161,14 @@
     align-items: flex-start;
 }
 
+@media (min-width: 768px) {
+    .content{
+        flex-direction: row;
+        padding-left: 17px;
+        padding-right: 25px;
+    }
+}
+
 .collapsible-content{
     display: flex;
     flex-direction: column;
@@ -148,6 +176,15 @@
     padding-left: 16px;
     padding-right: 16px;
 }
+
+@media (min-width: 768px) {
+    .collapsible-content{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
 
 .collapsible-content__text-content{
     margin-bottom: 16px;
@@ -165,6 +202,16 @@
 .text-content--wrapped{
     height: 90px;
     overflow: hidden;
+}
+
+.text-content__paragraph{
+    margin-bottom: 21px;
+}
+
+@media (min-width: 768px) {
+    .text-content--wrapped{
+        height: 160px;
+    }
 }
 
 .nav-list {

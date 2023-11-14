@@ -91,17 +91,30 @@
 }
 
 .content{
-    padding-left: 16px;
-    padding-right: 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+.scrollable-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.scrollable-content__text-content{
+    margin-bottom: 16px;
+}
+
+.scrollable-content__more-button{
+    margin-bottom: 16px;
+}
+
 .text-content{
     display: flex;
     flex-direction: column;
-    
 }
 
 .text-content--wrapped{
@@ -145,10 +158,6 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-}
-
-.content__more-button{
-    margin-bottom: 16px;
 }
 
 .more-button {

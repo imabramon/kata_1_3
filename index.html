@@ -11,10 +11,17 @@
     <header class="page-header">
         <button class="page-header__nav-button"><img src="img/checkstatus.svg" alt=""></button>
         <a class="page-header__logo-wrapper"><img src="img/logo.png" alt="" class="logo"></a>
-        <nav>
-            <ul class="page-header__aside-nav aside-nav-list">
-                <li><button class="page-header__nav-button"><img src="img/repair.svg" alt=""></button></li>
-                <li><button class="page-header__nav-button"><img src="img/checkstatus.svg" alt=""></button></li>
+        <nav class="page-header__aside-nav page-header__additional-aside">
+            <ul class="aside-nav-list aside-nav-list--no-mobile-visible">
+                <li class="aside-nav-list__item"><button class=""><img src="img/call.svg" alt=""></button></li>
+                <li class="aside-nav-list__item"><button class=""><img src="img/chat.svg" alt=""></button></li>
+                <li class="aside-nav-list__item"><button class=""><img src="img/profile.svg" alt=""></button></li>
+            </ul>
+        </nav>
+        <nav class="page-header__aside-nav">
+            <ul class="aside-nav-list aside-nav-list--with-divider">
+                <li class="aside-nav-list__item"><button class=""><img src="img/repair.svg" alt=""></button></li>
+                <li class="aside-nav-list__item"><button class=""><img src="img/checkstatus.svg" alt=""></button></li>
             </ul>
         </nav>
     </header>

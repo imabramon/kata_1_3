@@ -96,7 +96,7 @@
     align-items: flex-start;
 }
 
-.scrollable-content{
+.collapsible-content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -104,11 +104,11 @@
     padding-right: 16px;
 }
 
-.scrollable-content__text-content{
+.collapsible-content__text-content{
     margin-bottom: 16px;
 }
 
-.scrollable-content__more-button{
+.collapsible-content__more-button{
     margin-bottom: 16px;
 }
 

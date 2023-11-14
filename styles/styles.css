@@ -5,15 +5,12 @@
 }
 
 .page-header{
-    width: 100%;
     height: 88px;
     background-color: white;
     display: flex;
     align-items: center;
     padding-left: 16px;
-}
-.page-header__nav-button {
-    margin-right: 17px;
+    padding-right: 24px;
 }
 
 .page-header__aside-nav{
@@ -25,15 +22,14 @@
     margin-right: 39px;
 }
 
-.page-header__logo-wrapper::after {
-    position: absolute;
-    top: calc(50% - 16px);
-    right: -16px;
-    content: "";
-    display: block;
-    width: 2px;
-    height: 32px;
-    background: url("../img/divider.svg") no-repeat;
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) {
+    .page-header__logo-wrapper {
+        margin-right: auto;
+    }
 }
 
 .aside-nav-list{
@@ -41,6 +37,32 @@
     flex-direction: row;
 }
 
+@media (max-width: 768px) {
+    .aside-nav-list--no-mobile-visible{
+        display: none;
+    }
+}
+
+
+
+.aside-nav-list--with-divider{
+    position: relative;
+}
+
+.aside-nav-list--with-divider::before {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: -22px;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 32px;
+    background: url("../img/divider.svg") no-repeat;
+}
+
+.aside-nav-list__nav-button {
+    margin-right: 17px;
+}
 
 .logo {
     width: 96.55px;
@@ -170,3 +192,4 @@
 .more-button__title {
     font-weight: 500px;
 }
+

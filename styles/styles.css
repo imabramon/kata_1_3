@@ -219,6 +219,12 @@
     }
 }
 
+@media (min-width: 1120px) {
+    .content{
+        padding-left: 35px;
+    }
+}
+
 .collapsible-content{
     display: flex;
     flex-direction: column;
@@ -233,8 +239,6 @@
         padding-right: 0;
     }
 }
-
-
 
 .collapsible-content__text-content{
     margin-bottom: 16px;

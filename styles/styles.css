@@ -150,12 +150,12 @@
     margin-bottom: 24px;
 }
 
-.section__photo{
+.content__photo{
     display: block;
 }
 
 @media (min-width: 768px) {
-    .section__photo{
+    .content__photo{
         width: 360px;
         height: 208px;
         margin-left: 48PX;
@@ -164,7 +164,7 @@
 }
 
 @media (min-width: 1120px){
-    .section__photo{
+    .content__photo{
         width: 531.35px;
         height: 307px;
     }

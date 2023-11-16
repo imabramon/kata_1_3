@@ -1,5 +1,31 @@
 @import url("../fonts/TTLakes.css");
 
+.geometry-reset{
+    margin:0;
+    padding:0;
+}
+
+.button-reset{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.ul-reset,
+.li-reset
+{
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: 0;
+    list-style: none;
+ }
+
+
 .body{
     background-color: #F8F8F8;
 }

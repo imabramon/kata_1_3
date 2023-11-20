@@ -93,7 +93,7 @@
 }
 
 @media (min-width: 1120px) {
-    .page-header__logo-wrapper--no-desktop{
+    .page-header__logo-wrapper{
         display: none;
     }
 }
@@ -104,7 +104,7 @@
 
 
 @media (min-width: 1120px) {
-    .page-header__nav-button--no-desktop{
+    .page-header__nav-button{
         display: none;
     }
 }

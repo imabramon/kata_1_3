@@ -360,24 +360,24 @@
     font-weight: 500px;
 }
 
-.menu_button{
+.menu-button{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.menu_button__title{
+.menu-button__title{
     margin-right: 8px;
     font-weight: 500;
 }
 
 @media (max-width: 1119px){
-    .menu_button__title{
+    .menu-button__title{
         display: none;
     }
 }
 
-.menu_button__icon{
+.menu-button__icon{
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -386,10 +386,10 @@
     background-size: 100% 100%;
 }
 
-.menu_button__icon--type--checkstatus{
+.menu-button__icon--type--checkstatus{
     background-image: url("../img/checkstatus.svg");
 }
 
-.menu_button__icon--type--repair{
+.menu-button__icon--type--repair{
     background-image: url("../img/repair.svg");
 }

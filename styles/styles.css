@@ -1,4 +1,36 @@
-@import url("../fonts/TTLakes/stylesheet.css");
+@import url("../fonts/TTLakes.css");
+
+.geometry-reset{
+    margin:0;
+    padding:0;
+}
+
+.button-reset{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.link-reset{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.ul-reset,
+.li-reset
+{
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: 0;
+    list-style: none;
+ }
+
 
 .body{
     background-color: #F8F8F8;
@@ -67,7 +99,7 @@
 }
 
 @media (min-width: 1120px) {
-    .page-header__logo-wrapper--no-desktop{
+    .page-header__logo-wrapper{
         display: none;
     }
 }
@@ -78,7 +110,7 @@
 
 
 @media (min-width: 1120px) {
-    .page-header__nav-button--no-desktop{
+    .page-header__nav-button{
         display: none;
     }
 }
@@ -277,7 +309,7 @@
     display: flex;
     overflow-y: hidden;
     width: 100%;
-    height: 40px;
+    height: 46px;
 }
 
 @media (min-width: 1120px) {
@@ -295,7 +327,7 @@
     width: fit-content;
     height: fit-content;
 }
-.nav-list__button {
+.nav-list__link {
     display: block;
     padding: 8px 16px;
     font-size: 16px;
@@ -303,11 +335,11 @@
     letter-spacing: -0.2px;
     border-radius: 6px;
     color: #7E7E82;
-    height: 40px;
+    height: 24px;
     width: max-content;
     margin-left: 16px;
 }
-.nav-list__button--selected {
+.nav-list__link--selected {
     border: #B8FFEC solid;
     background-color: white;
 }
@@ -334,24 +366,24 @@
     font-weight: 500px;
 }
 
-.menu_button{
+.menu-button{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.menu_button__title{
+.menu-button__title{
     margin-right: 8px;
     font-weight: 500;
 }
 
 @media (max-width: 1119px){
-    .menu_button__title{
+    .menu-button__title{
         display: none;
     }
 }
 
-.menu_button__icon{
+.menu-button__icon{
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -360,10 +392,10 @@
     background-size: 100% 100%;
 }
 
-.menu_button__icon--type--checkstatus{
+.menu-button__icon--type--checkstatus{
     background-image: url("../img/checkstatus.svg");
 }
 
-.menu_button__icon--type--repair{
+.menu-button__icon--type--repair{
     background-image: url("../img/repair.svg");
 }

@@ -1,5 +1,9 @@
 @import url("../fonts/TTLakes.css");
 
+*{
+    box-sizing: border-box;
+}
+
 .geometry-reset{
     margin:0;
     padding:0;
@@ -577,4 +581,39 @@
     --button-icon-height: 18px;
     --button-icon-width: 20px;
     background-image: url("../img/profile_wo_bg.svg");
+}
+
+.grid {
+
+}
+.grid__item {
+}
+.deviece-card {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 72px;
+    padding: 16px; 
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+
+    background: #FFF;
+}
+.deviece-card__company-logo {
+    margin-right: auto;
+}
+
+.deviece-card__button {
+}
+.button--appearance--outline {
+    background-color: transparent;
+    border-color: #FF3E79;
+    border-style: solid;
+    border-width: 2px;
+}
+.button__type__arrow-right .button__icon{
+    --button-icon-height: 12px;
+    --button-icon-width: 7.5px;
+    background-image: url("../img/arrow-right.svg");
+    
 }

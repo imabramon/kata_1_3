@@ -289,6 +289,10 @@
     margin-bottom: 16px;
 }
 
+.collapsible-content__content{
+    width: 100%;
+}
+
 .collapsible-content__more-button{
     margin-bottom: 16px;
 }
@@ -584,14 +588,47 @@
 }
 
 .grid {
+    display: flex;
+    width: 100%;
+    overflow-y: hidden;
+    height: 72px;
+    column-gap: 16px;
+}
 
+@media (min-width: 768px) {
+    .grid{
+        flex-wrap: wrap;
+        height: 160px;
+        justify-content: space-between;
+        row-gap: 16px;
+    }
 }
+
+
+.grid::-webkit-scrollbar{
+    display: none;
+}
+
 .grid__item {
+    flex-shrink: 0;
 }
+
+@media (min-width: 768px) {
+    .grid__item{
+        flex-basis: calc(100% * 224 / 768);
+    }
+}
+
+@media (min-width: 1120px) {
+    .grid__item{
+        flex-basis:  calc(100% * 240 / 1120);
+    }
+}
+
 .deviece-card {
     display: flex;
     align-items: center;
-    width: 270px;
+    width: 240px;
     height: 72px;
     padding: 16px; 
     border-radius: 6px;
@@ -599,6 +636,8 @@
 
     background: #FFF;
 }
+
+
 .deviece-card__company-logo {
     margin-right: auto;
 }
@@ -615,5 +654,4 @@
     --button-icon-height: 12px;
     --button-icon-width: 7.5px;
     background-image: url("../img/arrow-right.svg");
-    
 }

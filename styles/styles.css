@@ -553,27 +553,27 @@
     margin-right: auto;
 }
 
-.button__type__close .button__icon{
+.button--type--close .button__icon{
     --button-icon-size: 16px;
     background-image: url("../img/close.svg");
 }
 
-.button__type__search .button__icon{
+.button--type--search .button__icon{
     --button-icon-size: 17px;
     background-image: url("../img/search.svg");
 }
 
-.button__type__phone .button__icon{
+.button--type--phone .button__icon{
     --button-icon-size: 18px;
     background-image: url("../img/phone.svg");
 }
 
-.button__type__chat .button__icon{
+.button--type--chat .button__icon{
     --button-icon-size: 20px;
     background-image: url("../img/chat_wo_bg.svg");
 }
 
-.button__type__profile .button__icon{
+.button--type--profile .button__icon{
     --button-icon-height: 18px;
     --button-icon-width: 20px;
     background-image: url("../img/profile_wo_bg.svg");

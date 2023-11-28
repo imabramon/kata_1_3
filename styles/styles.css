@@ -346,9 +346,26 @@
     width: 100%;
 }
 
-.collapsible-content__content--opened{
+.collapsible-content--opened .collapsible-content__content{
    height: fit-content;
 }
+
+.collapsible-content__opened-title{
+    display: none;
+}
+
+.collapsible-content--opened .collapsible-content__opened-title{
+    display: unset;
+}
+
+.collapsible-content--opened .collapsible-content__closed-title{
+    display: none;
+}
+
+.collapsible-content--opened .collapsible-content__icon{
+    background-image: url("../img/collapse.svg");
+}
+
 
 .collapsible-content__more-button{
     margin-bottom: 16px;
@@ -424,13 +441,6 @@
     align-items: center;
 }
 
-.more-button--closed .more-button__icon{
-    background-image: url("../img/expand.svg");
-}
-
-.more-button--opened .more-button__icon{
-    background-image: url("../img/collapse.svg");
-}
 
 
 .more-button__icon {
@@ -441,6 +451,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
+    background-image: url("../img/expand.svg");
 }
 .more-button__title {
     font-weight: 500px;

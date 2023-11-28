@@ -46,6 +46,11 @@
     background-color: #F8F8F8;
 }
 
+.body__element--centred{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (min-width: 1120px) {
     .body__header{
         position: absolute;
@@ -270,6 +275,54 @@
     }
 }
 
+.brand-section{
+    width: 100%;
+}
+
+@media (min-width: 1120px){
+    .brand-section{
+        width: 1120px;
+    }
+}
+
+.brand-section__header{
+    color: #7E7E82;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px){
+    .brand-section__element--no-mobile.brand-section__element--no-mobile{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .brand-section__element--only-mobile.brand-section__element--only-mobile{
+        display: none;
+    }
+}
+
+.brand-section__slider--scroll{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand-section__collapsible-content {
+    height: 72px;
+}
+
+@media (min-width: 768px) {
+    .brand-section__collapsible-content{
+        height: 160px;
+    }
+}
+
 .collapsible-content{
     display: flex;
     flex-direction: column;
@@ -291,6 +344,10 @@
 
 .collapsible-content__content{
     width: 100%;
+}
+
+.collapsible-content__content--opened{
+   height: fit-content;
 }
 
 .collapsible-content__more-button{
@@ -366,10 +423,21 @@
     display: flex;
     align-items: center;
 }
+
+.more-button--closed .more-button__icon{
+    background-image: url("../img/expand.svg");
+}
+
+.more-button--opened .more-button__icon{
+    background-image: url("../img/collapse.svg");
+}
+
+
 .more-button__icon {
     margin-right: 8px;
-    background: url("../img/expand.svg") no-repeat 0 0;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -589,21 +657,19 @@
 
 .grid {
     display: flex;
-    width: 100%;
+    width: fit-content;
+    height: 100%;
     overflow-y: hidden;
-    height: 72px;
     column-gap: 16px;
 }
 
 @media (min-width: 768px) {
     .grid{
         flex-wrap: wrap;
-        height: 160px;
-        justify-content: space-between;
+        column-gap: 20px;
         row-gap: 16px;
     }
 }
-
 
 .grid::-webkit-scrollbar{
     display: none;
@@ -633,7 +699,6 @@
     padding: 16px; 
     border-radius: 6px;
     border: 1px solid #EAEAEA;
-
     background: #FFF;
 }
 
@@ -655,3 +720,21 @@
     --button-icon-width: 7.5px;
     background-image: url("../img/arrow-right.svg");
 }
+
+.slider__scroll {
+    display: flex;
+    gap: 12px;
+}
+.slider__item {
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #DDDDDD;
+}
+
+.slider__item--current{
+    background-color: #B5B6BC;
+}
+

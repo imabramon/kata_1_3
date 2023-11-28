@@ -353,11 +353,13 @@
 
 .brand-section__collapsible-content {
     height: 72px;
+    margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
     .brand-section__collapsible-content{
         height: 160px;
+        margin-bottom: 24px;
     }
 }
 

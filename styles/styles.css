@@ -556,7 +556,6 @@
 
 .drop-right-menu__nav{
     margin-bottom: auto;
-    height: fit-content;
 }
 
 .drop-right-menu__links-list{
@@ -916,4 +915,8 @@
     to{
         transform: scaleX(1);
     }
+}
+
+.menu-nav{
+    height: fit-content;
 }

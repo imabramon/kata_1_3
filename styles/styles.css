@@ -581,6 +581,7 @@
 
 .mobile-menu__email-title{
     display: block;
+    width: fit-content;
     color: #1B1C21;
     font-family: "TT Lakes";
     font-size: 16px;
@@ -594,6 +595,7 @@
 .mobile-menu__phone-title{
     display: block;
     color: #1B1C21;
+    width: fit-content;
     font-family: "TT Lakes";
     font-size: 24px;
     font-style: normal;
@@ -693,7 +695,7 @@
 .lang-switcher:has(.lang-switcher__lang-item:hover:not(.lang-switcher__lang-item--selected)) .lang-switcher__lang-item--selected{
     color: #1B1C21;
     
-    animation-name: lang-switcher__color-change--selected;
+    animation-name: lang-switcher__color_change--selected;
 	animation-duration: var(--lang-switcher__animation-time);
     animation-iteration-count: 1;
     animation-fill-mode: backwards;
@@ -883,3 +885,35 @@
     background-color: #B5B6BC;
 }
 
+.text-with-underline-animation{
+    position: relative;
+}
+
+.text-with-underline-animation::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+}
+
+.text-with-underline-animation:hover::after{
+    transform: scaleX(1);
+    animation-name: text-with-underline-animation__animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes text-with-underline-animation__animation {
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}

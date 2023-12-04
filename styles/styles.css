@@ -544,6 +544,12 @@
     left: 0;
 }
 
+.drop-right-menu__button{
+    --animated-button__current-color: #FF3E79;
+    --animated-button__tagret-color: white;
+    --animated-button__target-filter: invert(46%) sepia(35%) saturate(7462%) hue-rotate(319deg) brightness(103%) contrast(106%);
+}
+
 .drop-right-menu__header{
     display: flex;
     width: 100%;
@@ -712,29 +718,49 @@
     background-color: #FF3E79;
 }
 
-.button:hover{
-    background-color: #FFF;
+.animated-button{
+    --animated-button__current-color-value: var(--animated-button__current-color, unset);
+    --animeted-button__tagret-color-value: var(--animated-button__tagret-color, currentColor);
+    --animated-button__target-filter-value: var(--animated-button__target-filter, unset);
+    --animated-button__animation-time-value: var(--animated-button__animation-time, 0.5s);
+}
 
-    animation-name: button__color-change;
-	animation-duration: var(--button__animation-time);
+.animated-button:hover{
+    background-color: var(--animeted-button__tagret-color-value);
+
+    animation-name: animated-button__color-change;
+	animation-duration: var(--animated-button__animation-time-value);
     animation-iteration-count: 1;
     animation-fill-mode: backwards;
     animation-timing-function: ease-in;
 }
 
-@keyframes button__color-change {
-	from { background-color: #FF3E79; }
-	to { background-color: #FFF; }
+.animated-button:hover .animated-button__filtred-element{
+    filter: var(--animated-button__target-filter-value);
+    animation-name: animated-button__icon-color-change;
+	animation-duration: var(--animated-button__animation-time-value);
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
 }
 
-@keyframes button__icon-color-change {
+@keyframes animated-button__color-change {
+	from { 
+        background-color: var(--animated-button__current-color-value);
+    }
+	to { 
+        background-color: var(--animeted-button__tagret-color-value); 
+    }
+}
+
+@keyframes animated-button__icon-color-change {
 	from { 
         filter: none; 
         opacity: 100%;
     }
     10%{
         opacity: 0%;
-        filter: invert(46%) sepia(35%) saturate(7462%) hue-rotate(319deg) brightness(103%) contrast(106%); 
+        filter: var(--animated-button__target-filter-value); 
     }   
 	to { 
         opacity: 100%;
@@ -754,17 +780,6 @@
     height: var(--button-icon-height);
     margin-left: auto;
     margin-right: auto;
-}
-
-
-
-.button:hover .button__icon{
-    filter: invert(46%) sepia(35%) saturate(7462%) hue-rotate(319deg) brightness(103%) contrast(106%);
-    animation-name: button__icon-color-change;
-	animation-duration: var(--button__animation-time);
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-in;
 }
 
 .button--type--close .button__icon{

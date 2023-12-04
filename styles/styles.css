@@ -644,8 +644,27 @@
 }
 
 .lang-switcher{
+    --lang-switcher__animation-time: 0.25s;
     display: flex;
     gap: 7px;
+}
+
+@keyframes lang-switcher__color_change--selected {
+    from{
+        color: #7E7E82
+    }
+    to{
+        color: #1B1C21;
+    }   
+}
+
+@keyframes lang-switcher__color_change--not-selected {
+    from{
+        color: #1B1C21;
+    }
+    to{
+        color:  #7E7E82;
+    }
 }
 
 .lang-switcher__lang-item{
@@ -659,6 +678,26 @@
 
 .lang-switcher__lang-item--selected{
     color: #7E7E82;
+}
+
+.lang-switcher__lang-item:hover:not(.lang-switcher__lang-item--selected){
+    color: #7E7E82;
+
+    animation-name: lang-switcher__color_change--not-selected;
+	animation-duration: var(--lang-switcher__animation-time);
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+}
+
+.lang-switcher:has(.lang-switcher__lang-item:hover:not(.lang-switcher__lang-item--selected)) .lang-switcher__lang-item--selected{
+    color: #1B1C21;
+    
+    animation-name: lang-switcher__color-change--selected;
+	animation-duration: var(--lang-switcher__animation-time);
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
 }
 
 .button{

@@ -884,6 +884,7 @@
     gap: 12px;
     content: "";
     height: 12px;
+    width: fit-content !important; /*Нужно для перебивки стиля из swipper*/
 }
 .slider__item {
     display: inline-block;

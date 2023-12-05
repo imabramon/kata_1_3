@@ -5,3 +5,7 @@
 # kata_1_4
 
 [Ссылка](https://imabramon.github.io/kata_1_3/menu.html)
+
+# kata_1_5
+
+[Ссылка](https://imabramon.github.io/kata_1_3/brands.html)

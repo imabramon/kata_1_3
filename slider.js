@@ -6,7 +6,7 @@ let swiperSettings = {
         clickable: true,
     },
     init: false,
-    slideClass: "deviece-card",
+    slideClass: "brand-card",
     slidesPerView: 'auto',
     spaceBetween: '16px',
 };

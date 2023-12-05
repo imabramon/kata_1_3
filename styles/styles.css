@@ -848,7 +848,7 @@
     }
 }
 
-.deviece-card {
+.brand-card {
     display: flex;
     align-items: center;
     width: 240px;
@@ -860,11 +860,11 @@
 }
 
 
-.deviece-card__company-logo {
+.brand-card__company-logo {
     margin-right: auto;
 }
 
-.deviece-card__button {
+.brand-card__button {
 }
 .button--appearance--outline {
     background-color: transparent;

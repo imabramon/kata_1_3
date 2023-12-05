@@ -1,4 +1,5 @@
-const swiper = new Swiper('.slider',{
+let swipperClass = '.slider';
+let swiperSettings = {
     direction: 'horizontal',
     pagination: {
         el: '.slider__scroll',
@@ -8,7 +9,9 @@ const swiper = new Swiper('.slider',{
     slideClass: "deviece-card",
     slidesPerView: 'auto',
     spaceBetween: '16px',
-});
+};
+
+let swiper = new Swiper(swipperClass,swiperSettings);
 
 if(window.innerWidth < 768){
     swiper.init();
@@ -16,9 +19,19 @@ if(window.innerWidth < 768){
 
 window.addEventListener('resize', function(){
     if(window.innerWidth < 768){
+       if(swiper.destroyed !== true){
+        return;
+       }
+
+        swiper = new Swiper(swipperClass, swiperSettings);
         swiper.init();
+        console.log("swipper init");
         return;
     }
 
-    swiper.destroy();
+    if(swiper.destroyed !== true){
+        swiper.destroy(true, true);
+        console.log(swiper);
+        console.log("swipper destroy");
+    }
 });

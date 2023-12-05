@@ -25,13 +25,10 @@ window.addEventListener('resize', function(){
 
         swiper = new Swiper(swipperClass, swiperSettings);
         swiper.init();
-        console.log("swipper init");
         return;
     }
 
     if(swiper.destroyed !== true){
         swiper.destroy(true, true);
-        console.log(swiper);
-        console.log("swipper destroy");
     }
 });

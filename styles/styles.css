@@ -338,24 +338,24 @@
 @media (min-width: 768px) {
     .brand-section__content{
         margin-left: auto;
-        width: 720px;
+        width: 730px;
     }
 }
 
 @media (min-width: 1120px) {
     .brand-section__content{
-        width: 1056px;
+        width: 1066px;
     }
 }
 
 .brand-section__collapsible-content {
-    height: 72px;
+    height: 82px;
     margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
     .brand-section__collapsible-content{
-        height: 160px;
+        height: 170px;
         margin-bottom: 24px;
     }
 }
@@ -384,7 +384,7 @@
 
 .collapsible-content__content{
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .collapsible-content--opened .collapsible-content__content{
@@ -810,6 +810,7 @@
 .grid {
     width: 100%;
     height: 100%;
+    padding: 5px;
 }
 
 @media (min-width: 768px) {
@@ -857,6 +858,10 @@
     border-radius: 6px;
     border: 1px solid #EAEAEA;
     background: #FFF;
+}
+
+.brand-card:hover{
+    box-shadow: 0 0 5px  rgba(0,0, 0, 0.5);
 }
 
 

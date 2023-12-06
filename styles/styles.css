@@ -276,6 +276,9 @@
 
 .brand-section{
     width: 100%;
+    --animated-button__current-color:  white;
+    --animated-button__tagret-color: #FF3E79;
+    --animated-button__target-filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(7487%) hue-rotate(77deg) brightness(110%) contrast(100%);
 }
 
 

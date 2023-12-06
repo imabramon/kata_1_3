@@ -861,6 +861,10 @@
     border-radius: 6px;
     border: 1px solid #EAEAEA;
     background: #FFF;
+    -moz-transition: box-shadow .5s ease-out;
+    -o-transition: box-shadow .5s ease-out;
+    -webkit-transition: box-shadow .5s ease-out;
+    transition: box-shadow .5s ease-out;
 }
 
 .brand-card:hover{

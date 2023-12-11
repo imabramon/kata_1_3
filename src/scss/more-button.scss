@@ -1,0 +1,19 @@
+.more-button {
+  display: flex;
+  align-items: center;
+}
+
+.more-button__icon {
+  margin-right: 8px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/expand.svg');
+}
+.more-button__title {
+  font-weight: 500px;
+  font-family: 'TT Lakes';
+}

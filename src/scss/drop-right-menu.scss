@@ -1,0 +1,115 @@
+.drop-right-menu {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.drop-right-menu__button {
+  --animated-button__current-color: #ff3e79;
+  --animated-button__tagret-color: white;
+  --animated-button__target-filter: invert(46%) sepia(35%) saturate(7462%)
+    hue-rotate(319deg) brightness(103%) contrast(106%);
+}
+
+.drop-right-menu__header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 24px;
+  padding-top: 18px;
+  margin-bottom: 50px;
+}
+
+.drop-right-menu__nav {
+  margin-bottom: auto;
+}
+
+.drop-right-menu__links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
+  padding-left: 24px;
+}
+
+.drop-right-menu__footer {
+  width: 100%;
+  padding-left: 24px;
+  padding-bottom: 32px;
+}
+
+.drop-right-menu__additional_buttons {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.drop-right-menu__email-title {
+  display: block;
+  width: fit-content;
+  color: #1b1c21;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+}
+
+.drop-right-menu__phone-title {
+  display: block;
+  color: #1b1c21;
+  width: fit-content;
+  font-family: 'TT Lakes';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
+  margin-bottom: 40px;
+}
+
+.drop-right-menu__close-button {
+  margin-right: 17px;
+}
+
+.drop-right-menu__logo-wrapper {
+  margin-right: auto;
+}
+
+.drop-right-menu__link-item {
+  color: #1b1c21;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.drop-right-menu__link-item:hover {
+  color: #7e7e82;
+}
+
+.drop-right-menu__link-item--selected {
+  color: #7e7e82;
+}
+
+.drop-right-menu__link-item--selected::before {
+  content: '';
+  display: block;
+  height: 40px;
+  width: 4px;
+  background: url('../img/highlight.svg');
+  position: absolute;
+  transform: translate(-24px, -7px);
+}

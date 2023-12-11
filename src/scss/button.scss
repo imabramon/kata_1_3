@@ -1,0 +1,62 @@
+.button {
+  --button__animation-time: 0.5s;
+
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff3e79;
+}
+
+.button__icon {
+  --button-icon-size: 17px;
+  --button-icon-height: var(--button-icon-size);
+  --button-icon-width: var(--button-icon-size);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  content: '';
+  width: var(--button-icon-width);
+  height: var(--button-icon-height);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button--type--close .button__icon {
+  --button-icon-size: 16px;
+  background-image: url('../img/close.svg');
+}
+
+.button--type--search .button__icon {
+  --button-icon-size: 17px;
+  background-image: url('../img/search.svg');
+}
+
+.button--type--phone .button__icon {
+  --button-icon-size: 18px;
+  background-image: url('../img/phone.svg');
+}
+
+.button--type--chat .button__icon {
+  --button-icon-size: 20px;
+  background-image: url('../img/chat_wo_bg.svg');
+}
+
+.button--type--profile .button__icon {
+  --button-icon-height: 18px;
+  --button-icon-width: 20px;
+  background-image: url('../img/profile_wo_bg.svg');
+}
+
+.button--appearance--outline {
+  background-color: transparent;
+  border-color: #ff3e79;
+  border-style: solid;
+  border-width: 2px;
+}
+.button__type__arrow-right .button__icon {
+  --button-icon-height: 12px;
+  --button-icon-width: 7.5px;
+  background-image: url('../img/arrow-right.svg');
+}

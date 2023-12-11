@@ -1,0 +1,59 @@
+.lang-switcher {
+  --lang-switcher__animation-time: 0.25s;
+  display: flex;
+  gap: 7px;
+}
+
+@keyframes lang-switcher__color_change--selected {
+  from {
+    color: #7e7e82;
+  }
+  to {
+    color: #1b1c21;
+  }
+}
+
+@keyframes lang-switcher__color_change--not-selected {
+  from {
+    color: #1b1c21;
+  }
+  to {
+    color: #7e7e82;
+  }
+}
+
+.lang-switcher__lang-item {
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #1b1c21;
+}
+
+.lang-switcher__lang-item--selected {
+  color: #7e7e82;
+}
+
+.lang-switcher__lang-item:hover:not(.lang-switcher__lang-item--selected) {
+  color: #7e7e82;
+
+  animation-name: lang-switcher__color_change--not-selected;
+  animation-duration: var(--lang-switcher__animation-time);
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+}
+
+.lang-switcher:has(
+    .lang-switcher__lang-item:hover:not(.lang-switcher__lang-item--selected)
+  )
+  .lang-switcher__lang-item--selected {
+  color: #1b1c21;
+
+  animation-name: lang-switcher__color_change--selected;
+  animation-duration: var(--lang-switcher__animation-time);
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+}

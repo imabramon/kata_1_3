@@ -1,0 +1,19 @@
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content--wrapped {
+  height: 90px;
+  overflow: hidden;
+}
+
+.text-content__paragraph {
+  margin-bottom: 21px;
+}
+
+@media (min-width: 768px) {
+  .text-content--wrapped {
+    height: 160px;
+  }
+}

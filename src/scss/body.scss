@@ -1,0 +1,16 @@
+.body {
+  background: #f8f8f8;
+}
+
+.body__element--centred {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1120px) {
+  .body__header {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

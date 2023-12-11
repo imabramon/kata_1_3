@@ -1,0 +1,26 @@
+.section {
+  font-family: 'TT Lakes';
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.section__header {
+  margin-bottom: 24px;
+}
+
+.section {
+  width: 100%;
+}
+
+.section__nav {
+  margin-bottom: 24px;
+}
+
+.section__list {
+}
+
+.section__text-content {
+  margin-bottom: 16px;
+}

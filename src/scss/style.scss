@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @import url('../fonts/TTLakes.css');
 @import url('page-header.scss');
 @import url('body.scss');
@@ -22,42 +26,3 @@
 @import url('slider.scss');
 @import url('text-with-underline-animation.scss');
 @import url('menu-nav.scss');
-
-* {
-  box-sizing: border-box;
-}
-
-.geometry-reset {
-  margin: 0;
-  padding: 0;
-}
-
-.button-reset {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.link-reset {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-.list-reset {
-  margin: 0;
-  padding: 0;
-  text-indent: 0;
-  list-style-type: 0;
-  list-style: none;
-}
-
-.link-reset {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: inherit;
-}

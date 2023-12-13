@@ -1,4 +1,7 @@
+@import url('mixins.scss');
+
 .body {
+  @include geometry-reset;
   background: #f8f8f8;
 }
 

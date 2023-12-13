@@ -1,3 +1,5 @@
+@import url('mixins.scss');
+
 .section {
   font-family: 'TT Lakes';
   padding-top: 25px;
@@ -7,6 +9,7 @@
 }
 
 .section__header {
+  @include geometry-reset;
   margin-bottom: 24px;
 }
 

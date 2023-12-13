@@ -1,4 +1,7 @@
+@import url('mixins.scss');
+
 .brand-section {
+  @include geometry-reset;
   width: 100%;
   --animated-button__current-color: white;
   --animated-button__tagret-color: #ff3e79;

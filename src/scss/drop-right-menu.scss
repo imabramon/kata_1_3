@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .drop-right-menu {
   display: flex;
   flex-direction: column;
@@ -29,6 +31,7 @@
 }
 
 .drop-right-menu__links-list {
+  @include list-reset;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -43,9 +46,14 @@
 }
 
 .drop-right-menu__additional_buttons {
+  @include list-reset;
   margin-bottom: 16px;
   display: flex;
   gap: 16px;
+}
+
+.drop-right-menu__additional_button {
+  @include list-reset;
 }
 
 .drop-right-menu__email-title {
@@ -83,6 +91,7 @@
 }
 
 .drop-right-menu__link-item {
+  @include list-reset;
   color: #1b1c21;
   font-family: 'TT Lakes';
   font-size: 16px;

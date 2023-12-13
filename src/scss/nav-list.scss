@@ -1,4 +1,7 @@
+@import 'mixins.scss';
+
 .nav-list {
+  @include list-reset;
   display: flex;
   overflow-y: hidden;
   width: 100%;
@@ -16,6 +19,7 @@
   display: none;
 }
 .nav-list__item {
+  @include list-reset;
   display: block;
   width: fit-content;
   height: fit-content;

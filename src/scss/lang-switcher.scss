@@ -1,4 +1,7 @@
+@import 'mixins.scss';
+
 .lang-switcher {
+  @include list-reset;
   --lang-switcher__animation-time: 0.25s;
   display: flex;
   gap: 7px;
@@ -23,6 +26,7 @@
 }
 
 .lang-switcher__lang-item {
+  @include list-reset;
   font-family: 'TT Lakes';
   font-size: 16px;
   line-height: 24px;

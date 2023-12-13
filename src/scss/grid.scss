@@ -1,4 +1,7 @@
+@import 'mixins.scss';
+
 .grid {
+  @include link-reset;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -25,6 +28,7 @@
 }
 
 .grid__item {
+  @include link-reset;
   flex-shrink: 0;
 }
 

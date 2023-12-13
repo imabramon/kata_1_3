@@ -1,4 +1,8 @@
+@import 'mixins.scss';
+
 .button {
+  @include button-reset;
+
   --button__animation-time: 0.5s;
 
   display: flex;

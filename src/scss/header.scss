@@ -2,20 +2,20 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 40px;
-}
 
-.header__title {
-  padding-left: 16px;
-  position: relative;
-}
+  &__title {
+    padding-left: 16px;
+    position: relative;
 
-.header__title::before {
-  content: '';
-  display: block;
-  height: 40px;
-  width: 4px;
-  background: url('../img/highlight.svg');
-  position: absolute;
-  top: 0px;
-  left: 0px;
+    &::before {
+      content: '';
+      display: block;
+      height: 40px;
+      width: 4px;
+      background: url('../img/highlight.svg');
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
 }

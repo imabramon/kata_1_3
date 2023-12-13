@@ -24,3 +24,7 @@
 .aside-nav-list__nav-button {
   margin-right: 17px;
 }
+
+.aside-nav-list__button {
+  @include button-reset;
+}

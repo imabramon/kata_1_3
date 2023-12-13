@@ -6,24 +6,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.section__header {
-  @include geometry-reset;
-  margin-bottom: 24px;
-}
-
-.section {
   width: 100%;
-}
 
-.section__nav {
-  margin-bottom: 24px;
-}
+  &__header {
+    @include geometry-reset;
+    margin-bottom: 24px;
+  }
 
-.section__list {
-}
+  &__nav {
+    margin-bottom: 24px;
+  }
 
-.section__text-content {
-  margin-bottom: 16px;
+  &__text-content {
+    margin-bottom: 16px;
+  }
 }

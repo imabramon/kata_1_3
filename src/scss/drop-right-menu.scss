@@ -10,117 +10,125 @@
   left: 0;
   background-color: white;
   z-index: 1;
-}
 
-.drop-right-menu__button {
-  --animated-button__current-color: #ff3e79;
-  --animated-button__tagret-color: white;
-  --animated-button__target-filter: invert(46%) sepia(35%) saturate(7462%)
-    hue-rotate(319deg) brightness(103%) contrast(106%);
-}
+  &__button {
+    --animated-button__current-color: #ff3e79;
+    --animated-button__tagret-color: white;
+    --animated-button__target-filter: invert(46%) sepia(35%) saturate(7462%)
+      hue-rotate(319deg) brightness(103%) contrast(106%);
+  }
 
-.drop-right-menu__header {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  padding-left: 24px;
-  padding-top: 18px;
-  margin-bottom: 50px;
-}
+  &__header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-left: 24px;
+    padding-top: 18px;
+    margin-bottom: 50px;
+  }
 
-.drop-right-menu__nav {
-  margin-bottom: auto;
-}
+  &__links-list {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    padding-left: 24px;
+  }
 
-.drop-right-menu__links-list {
-  @include list-reset;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  height: 100%;
-  padding-left: 24px;
-}
+  &__footer {
+    width: 100%;
+    padding-left: 24px;
+    padding-bottom: 32px;
+  }
 
-.drop-right-menu__footer {
-  width: 100%;
-  padding-left: 24px;
-  padding-bottom: 32px;
-}
+  &__additional_buttons {
+    @include list-reset;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+  }
 
-.drop-right-menu__additional_buttons {
-  @include list-reset;
-  margin-bottom: 16px;
-  display: flex;
-  gap: 16px;
-}
+  &__additional_button {
+    @include list-reset;
+  }
 
-.drop-right-menu__additional_button {
-  @include list-reset;
-}
+  &__email-title {
+    @include link-reset;
 
-.drop-right-menu__email-title {
-  display: block;
-  width: fit-content;
-  color: #1b1c21;
-  font-family: 'TT Lakes';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: -0.2px;
-  margin-bottom: 12px;
-}
+    display: block;
+    width: fit-content;
+    color: #1b1c21;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    margin-bottom: 12px;
+  }
 
-.drop-right-menu__phone-title {
-  display: block;
-  color: #1b1c21;
-  width: fit-content;
-  font-family: 'TT Lakes';
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px; /* 133.333% */
-  letter-spacing: -0.6px;
-  margin-bottom: 40px;
-}
+  &__nav {
+    margin-bottom: auto;
+  }
 
-.drop-right-menu__close-button {
-  margin-right: 17px;
-}
+  &__phone-title {
+    @include link-reset;
 
-.drop-right-menu__logo-wrapper {
-  margin-right: auto;
-}
+    display: block;
+    color: #1b1c21;
+    width: fit-content;
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.6px;
+    margin-bottom: 40px;
+  }
 
-.drop-right-menu__link-item {
-  @include list-reset;
-  color: #1b1c21;
-  font-family: 'TT Lakes';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: -0.2px;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
+  &__close-button {
+    margin-right: 17px;
+  }
 
-.drop-right-menu__link-item:hover {
-  color: #7e7e82;
-}
+  &__link-item {
+    @include list-reset;
+    color: #1b1c21;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 
-.drop-right-menu__link-item--selected {
-  color: #7e7e82;
-}
+    &:hover {
+      color: #7e7e82;
+    }
 
-.drop-right-menu__link-item--selected::before {
-  content: '';
-  display: block;
-  height: 40px;
-  width: 4px;
-  background: url('../img/highlight.svg');
-  position: absolute;
-  transform: translate(-24px, -7px);
+    &--selected {
+      color: #7e7e82;
+
+      &::before {
+        content: '';
+        display: block;
+        height: 40px;
+        width: 4px;
+        background: url('../img/highlight.svg');
+        position: absolute;
+        transform: translate(-24px, -7px);
+      }
+    }
+  }
+
+  &__link {
+    @include link-reset;
+  }
+
+  &__logo-wrapper {
+    margin-right: auto;
+  }
 }

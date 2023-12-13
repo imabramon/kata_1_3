@@ -1,4 +1,4 @@
-@import url('mixins.scss');
+@import 'mixins.scss';
 
 .body {
   @include geometry-reset;

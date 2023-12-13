@@ -15,25 +15,24 @@
     --animated-button__animation-time,
     0.5s
   );
-}
 
-.animated-button:hover {
-  background-color: var(--animeted-button__tagret-color-value);
+  &:hover {
+    background-color: var(--animeted-button__tagret-color-value);
+    animation-name: animated-button__color-change;
+    animation-duration: var(--animated-button__animation-time-value);
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
 
-  animation-name: animated-button__color-change;
-  animation-duration: var(--animated-button__animation-time-value);
-  animation-iteration-count: 1;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in;
-}
-
-.animated-button:hover .animated-button__filtred-element {
-  filter: var(--animated-button__target-filter-value);
-  animation-name: animated-button__icon-color-change;
-  animation-duration: var(--animated-button__animation-time-value);
-  animation-iteration-count: 1;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in;
+    .animated-button__filtred-element {
+      filter: var(--animated-button__target-filter-value);
+      animation-name: animated-button__icon-color-change;
+      animation-duration: var(--animated-button__animation-time-value);
+      animation-iteration-count: 1;
+      animation-fill-mode: backwards;
+      animation-timing-function: ease-in;
+    }
+  }
 }
 
 @keyframes animated-button__color-change {

@@ -1,30 +1,30 @@
 @import 'mixins.scss';
 
-.aside-nav-list__item {
-  @include list-reset;
-  margin-right: 17px;
-}
-
-.aside-nav-list__item:last-of-type {
-  margin-right: 0;
-}
-
 .aside-nav-list {
   @include list-reset;
   display: flex;
   flex-direction: row;
-}
 
-@media (max-width: 767px) {
-  .aside-nav-list--no-mobile-visible {
-    display: none;
+  &__item {
+    @include list-reset;
+    margin-right: 17px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
-}
 
-.aside-nav-list__nav-button {
-  margin-right: 17px;
-}
+  &--no-mobile-visible {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
 
-.aside-nav-list__button {
-  @include button-reset;
+  &__nav-button {
+    margin-right: 17px;
+  }
+
+  &__button {
+    @include button-reset;
+  }
 }

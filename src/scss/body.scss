@@ -3,17 +3,17 @@
 .body {
   @include geometry-reset;
   background: #f8f8f8;
-}
 
-.body__element--centred {
-  margin-left: auto;
-  margin-right: auto;
-}
+  &__element--centred {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-@media (min-width: 1120px) {
-  .body__header {
-    position: absolute;
-    top: 0;
-    right: 0;
+  &__header {
+    @media (min-width: 1120px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 }

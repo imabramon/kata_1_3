@@ -11,6 +11,14 @@
   background-color: white;
   z-index: 1;
 
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+
+  transition: left 0.5s ease-out;
+
+  @media (min-width: 1440px) {
+    position: static;
+  }
+
   &__button {
     --animated-button__current-color: #ff3e79;
     --animated-button__tagret-color: white;
@@ -23,6 +31,7 @@
     width: 100%;
     align-items: center;
     padding-left: 24px;
+    padding-right: 29px;
     padding-top: 18px;
     margin-bottom: 50px;
   }
@@ -130,5 +139,47 @@
 
   &__logo-wrapper {
     margin-right: auto;
+  }
+
+  &__element-to-blur {
+    &::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      z-index: 0;
+      pointer-events: none;
+
+      transition: all 0.5s ease-in-out;
+    }
+
+    &--blurred {
+      &::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        opacity: 0.9605;
+        background: linear-gradient(
+          270deg,
+          #f8f8f8 16.84%,
+          rgba(248, 248, 248, 0) 100%
+        );
+        transition: opacity 0.5s ease-out;
+      }
+    }
+  }
+
+  &--closed {
+    @media (max-width: 1439px) {
+      box-shadow: none;
+      left: -306px;
+    }
   }
 }

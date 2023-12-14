@@ -9,17 +9,17 @@
   padding-right: 24px;
   font-family: 'TT Lakes';
 
-  @media (min-width: 1120px) {
+  @media (min-width: 1440px) {
     background-color: transparent;
   }
 
   &__aside-nav {
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       margin-left: auto;
     }
 
     &--no-desktop {
-      @media (min-width: 1120px) {
+      @media (min-width: 1440px) {
         display: none;
       }
     }
@@ -37,7 +37,7 @@
         height: 32px;
         background: url('../img/divider.svg') no-repeat;
 
-        @media (min-width: 1120px) {
+        @media (min-width: 1440px) {
           display: none;
         }
       }
@@ -52,7 +52,7 @@
     position: relative;
     margin-right: auto;
 
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       display: none;
     }
 
@@ -78,7 +78,7 @@
       margin-right: 43px;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       display: none;
     }
   }

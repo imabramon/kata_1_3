@@ -4,16 +4,31 @@
   @include geometry-reset;
   background: #f8f8f8;
 
+  height: 100vh;
+
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+
   &__element--centred {
     margin-left: auto;
     margin-right: auto;
   }
 
   &__header {
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       position: absolute;
       top: 0;
       right: 0;
     }
+  }
+
+  &__content {
+    @media (min-width: 1440px) {
+      width: calc(100% - 306px);
+    }
+  }
+
+  &__menu {
   }
 }

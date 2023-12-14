@@ -1,0 +1,90 @@
+@import 'css-functions.scss';
+
+@mixin drop-menu__set-orentation($orentation) {
+  @if $orentation == 'left' {
+    --drop-menu__box-shadow-orentation: -1;
+  }
+  else {
+    --drop-menu__box-shadow-orentation: 1;
+  }
+}
+
+.drop-menu {
+  --drop-menu__box-shadow-ofset-size-value: var(
+    --drop-menu__box-shadow-ofset-size,
+    16px
+  );
+  --drop-menu__box-shadow-ofset-x-value: calc(
+    var(--drop-menu__box-shadow-orentation) *
+      var(--drop-menu__box-shadow-offset-size)
+  );
+
+  width: css-min(100vw, 320px);
+  height: 100%;
+  position: absolute;
+
+  top: 0;
+  left: var(--drop-menu__opened-left);
+  right: var(--drop-menu__opened-right);
+
+  background-color: white;
+  z-index: 1;
+  box-shadow: var(--drop-menu__box-shadow-ofset-size-value) 0px 52px 0px
+    rgba(14, 24, 80, 0.2);
+
+  &--type-- {
+    &right {
+      transition: left 0.5s ease-out;
+      --drop-menu__closed-left: -320px;
+      --drop-menu__closed-right: unset;
+      --drop-menu__opened-left: 0;
+      --drop-menu__opened-right: unset;
+    }
+
+    &left {
+      transition: right 0.5s ease-out;
+      --drop-menu__closed-left: unset;
+      --drop-menu__closed-right: -320px;
+      --drop-menu__opened-left: unset;
+      --drop-menu__opened-right: 0px;
+    }
+  }
+
+  &--closed {
+    @media (max-width: 1439px) {
+      left: var(--drop-menu__closed-left);
+      right: var(--drop-menu__closed-right);
+    }
+  }
+
+  &__element-to-blur {
+    &::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      z-index: 0;
+      pointer-events: none;
+
+      transition: all 0.5s ease-in-out;
+    }
+
+    &--blurred {
+      &::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        opacity: 0.9605;
+        background-color: #fff;
+        transition: opacity 0.5s ease-out;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
 import '../scss/style.scss'
-import './drop-right-menu.js'
+import './drop-main-menu.js'
 
 console.log('Works!')

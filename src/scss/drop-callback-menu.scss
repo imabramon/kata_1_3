@@ -1,0 +1,56 @@
+@import './mixins.scss';
+@import './drop-menu.scss';
+
+.drop-callback-menu {
+  @include drop-menu__set-orentation('left');
+  padding: {
+    top: 32px;
+  }
+
+  &__header {
+    @include geometry-reset;
+
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.6px;
+    margin: {
+      bottom: 24px;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: 32px;
+    }
+  }
+
+  &__close-button {
+    @media (max-width: 767px) {
+      margin-left: 16px;
+    }
+  }
+
+  &__input {
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    align-self: flex-end;
+    margin-top: 24px;
+  }
+
+  &__button-title {
+    width: 90px;
+    color: #fff;
+    text-align: right;
+    font-family: 'TT Lakes';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+  }
+}

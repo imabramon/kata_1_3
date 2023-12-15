@@ -51,9 +51,13 @@
   }
 
   &--closed {
-    @media (max-width: 1439px) {
-      left: var(--drop-menu__closed-left);
-      right: var(--drop-menu__closed-right);
+    left: var(--drop-menu__closed-left);
+    right: var(--drop-menu__closed-right);
+
+    & > .drop-menu__content-out-button {
+      @media (min-width: 768px) {
+        left: 0;
+      }
     }
   }
 
@@ -86,5 +90,15 @@
         transition: opacity 0.5s ease-out;
       }
     }
+  }
+
+  &__content-out-button {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 32px;
+      left: -72px;
+    }
+
+    transition: all 0.5s ease-out;
   }
 }

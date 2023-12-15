@@ -92,6 +92,10 @@
 
   &__close-button {
     margin-right: 17px;
+
+    @media (min-width: 1440px) {
+      display: none !important;
+    }
   }
 
   &__link-item {
@@ -123,6 +127,13 @@
         background: url('../img/highlight.svg');
         position: absolute;
         transform: translate(-24px, -7px);
+      }
+    }
+
+    &--closed {
+      @media (min-width: 1440px) {
+        left: var(--drop-menu__opened-left);
+        right: var(--drop-menu__opened-right);
       }
     }
   }

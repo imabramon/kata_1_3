@@ -1,0 +1,36 @@
+@import './mixins.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: {
+    left: 16px;
+    right: 16px;
+  }
+
+  &__input {
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+
+    padding: 12px 16px;
+  }
+
+  &__text {
+    color: #7e7e82;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+  }
+
+  &__link {
+    @include link-reset;
+    color: #ff3e79;
+  }
+}

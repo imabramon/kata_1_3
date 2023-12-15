@@ -3,7 +3,6 @@
 .body {
   @include geometry-reset;
   background: #f8f8f8;
-
   height: 100vh;
 
   @media (min-width: 1440px) {
@@ -25,7 +24,7 @@
 
   &__content {
     @media (min-width: 1440px) {
-      width: calc(100% - 306px);
+      width: calc(100vw - 306px);
     }
   }
 

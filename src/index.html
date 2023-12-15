@@ -7,7 +7,7 @@
   </head>
   <body class="body">
     <aside
-      class="drop-main-menu drop-menu drop-menu--type--left drop-menu--closed body__menu drop-main-menu--closed"
+      class="drop-main-menu drop-menu drop-menu--type--right drop-menu--closed body__menu drop-main-menu--closed"
     >
       <header class="drop-main-menu__header">
         <button
@@ -112,6 +112,40 @@
         </ul>
       </footer>
     </aside>
+    <aside
+      class="drop-callback-menu drop-menu drop-menu--type--left drop-menu--closed"
+    >
+      <button
+        class="button button--type--close drop-callback-menu__close-button animated-button drop-main-menu__button drop-callback-menu__control drop-menu__content-out-button drop-callback-menu__close-button"
+      >
+        <div class="button__icon animated-button__filtred-element"></div>
+      </button>
+      <h1 class="header drop-callback-menu__header">
+        <span class="header__title">Заказать звонок</span></h1
+      >
+      <form action="" class="form">
+        <input
+          type="tel"
+          placeholder="Телефон"
+          class="form__input drop-callback-menu__input"
+        />
+        <label class="form__text">
+          Нажимая “отправить”, вы даете согласие на <a class="form__link"
+            >обработку персональных данных</a
+          >
+          и соглашаетесь с нашей
+          <a class="form__link">политикой конфиденциальности</a>
+        </label>
+        <button
+          type="submit"
+          class="button button--type--submit button--appearance--content-filled drop-callback-menu__button"
+        >
+          <span class="drop-callback-menu__button-title"> Отправить </span>
+          <span class="button__icon"></span>
+        </button>
+      </form>
+    </aside>
+
     <div class="body__content drop-menu__element-to-blur">
       <header class="page-header body__header">
         <button class="page-header__nav-button drop-main-menu__control"
@@ -151,7 +185,7 @@
               </button>
             </li>
             <li class="aside-nav-list__item">
-              <button class="menu-button">
+              <button class="menu-button drop-callback-menu__control">
                 <span class="menu-button__title">Статус ремонта</span>
                 <span
                   class="menu-button__icon menu-button__icon--type--checkstatus"

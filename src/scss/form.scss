@@ -29,6 +29,13 @@
     line-height: 16px; /* 114.286% */
   }
 
+  &__textarea {
+    height: unset;
+    &::-webkit-resizer {
+      display: none;
+    }
+  }
+
   &__link {
     @include link-reset;
     color: #ff3e79;

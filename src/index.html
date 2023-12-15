@@ -113,24 +113,24 @@
       </footer>
     </aside>
     <aside
-      class="drop-callback-menu drop-menu drop-menu--type--left drop-menu--closed"
+      class="drop-callback-menu drop-form-menu drop-menu drop-menu--type--left drop-menu--closed"
     >
       <button
-        class="button button--type--close drop-callback-menu__close-button animated-button drop-main-menu__button drop-callback-menu__control drop-menu__content-out-button drop-callback-menu__close-button"
+        class="button button--type--close drop-form-menu__close-button animated-button drop-main-menu__button drop-callback-menu__control drop-menu__content-out-button drop-callback-menu__close-button"
       >
         <div class="button__icon animated-button__filtred-element"></div>
       </button>
-      <h1 class="header drop-callback-menu__header">
+      <h1 class="header drop-form-menu__header">
         <span class="header__title">Заказать звонок</span></h1
       >
       <form action="" class="form">
         <input
           type="tel"
           placeholder="Телефон"
-          class="form__input drop-callback-menu__input"
+          class="form__input drop-form-menu__input"
         />
         <label class="form__text">
-          Нажимая “отправить”, вы даете согласие на <a class="form__link"
+          Нажимая “отправить”, вы даете согласие на  <a class="form__link"
             >обработку персональных данных</a
           >
           и соглашаетесь с нашей
@@ -138,14 +138,61 @@
         </label>
         <button
           type="submit"
-          class="button button--type--submit button--appearance--content-filled drop-callback-menu__button"
+          class="button button--type--submit button--appearance--content-filled drop-form-menu__button"
         >
-          <span class="drop-callback-menu__button-title"> Отправить </span>
+          <span class="drop-form-menu__button-title"> Отправить </span>
           <span class="button__icon"></span>
         </button>
       </form>
     </aside>
-
+    <aside
+      class="drop-menu drop-menu--closed drop-menu--type--left drop-feedback-menu drop-form-menu drop-feedback-menu"
+    >
+      <button
+        class="button button--type--close drop-form-menu__close-button animated-button drop-main-menu__button drop-feedback-menu__control drop-menu__content-out-button drop-callback-menu__close-button"
+      >
+        <div class="button__icon animated-button__filtred-element"></div>
+      </button>
+      <h1 class="header drop-form-menu__header">
+        <span class="header__title">Обратная связь</span>
+      </h1>
+      <form class="form">
+        <input
+          type="text"
+          placeholder="Имя"
+          class="drop-form-menu__input form__input"
+        />
+        <input
+          type="text"
+          placeholder="Телефон"
+          class="drop-form-menu__input form__input"
+        />
+        <input
+          type="text"
+          placeholder="Элеткронная почта"
+          class="drop-form-menu__input form__input"
+        />
+        <textarea
+          placeholder="Сообщение"
+          class="form__textarea form__input drop-form-menu__input"
+          rows="4"
+        ></textarea>
+        <label class="form__text">
+          Нажимая “отправить”, вы даете согласие на  <a class="form__link"
+            >обработку персональных данных</a
+          >
+          и соглашаетесь с нашей
+          <a class="form__link">политикой конфиденциальности</a>
+        </label>
+        <button
+          type="submit"
+          class="button button--type--submit button--appearance--content-filled drop-form-menu__button"
+        >
+          <span class="drop-form-menu__button-title"> Отправить </span>
+          <span class="button__icon"></span>
+        </button>
+      </form>
+    </aside>
     <div class="body__content drop-menu__element-to-blur">
       <header class="page-header body__header">
         <button class="page-header__nav-button drop-main-menu__control"
@@ -177,7 +224,7 @@
         >
           <ul class="aside-nav-list">
             <li class="aside-nav-list__item">
-              <button class="menu-button">
+              <button class="menu-button drop-feedback-menu__control">
                 <span class="menu-button__title">Оставить заявку</span>
                 <span
                   class="menu-button__icon menu-button__icon--type--repair"

@@ -1,7 +1,7 @@
 @import './mixins.scss';
 @import './drop-menu.scss';
 
-.drop-callback-menu {
+.drop-form-menu {
   @include drop-menu__set-orentation('left');
   padding: {
     top: 32px;

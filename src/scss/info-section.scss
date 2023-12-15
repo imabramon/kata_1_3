@@ -1,0 +1,23 @@
+@import 'mixins.scss';
+
+.info-section {
+  font-family: 'TT Lakes';
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+
+  &__header {
+    @include geometry-reset;
+    margin-bottom: 24px;
+  }
+
+  &__nav {
+    margin-bottom: 24px;
+  }
+
+  &__text-content {
+    margin-bottom: 16px;
+  }
+}

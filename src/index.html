@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Блок из 1.3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body class="body">
     <aside
@@ -243,12 +247,12 @@
         </nav>
       </header>
       <main>
-        <section class="section">
-          <h2 class="section__header header">
+        <section class="info-section">
+          <h2 class="info-section__header header">
             <span class="header__title"> Услуги и сервисы </span>
           </h2>
-          <nav class="section__nav">
-            <ul class="section__list nav-list">
+          <nav class="info-section__nav">
+            <ul class="info-section__list nav-list">
               <li class="nav-list__item"
                 ><a
                   href="#"
@@ -309,19 +313,19 @@
             <img src="img/photo.jpg" alt="" class="content__photo" />
           </div>
         </section>
-        <section class="brand-section">
-          <header class="brand-section__header">
-            <h2 class="brand-section__text-header"
+        <section class="section">
+          <header class="section__header">
+            <h2 class="section__text-header"
               >Ремонт техники различных брендов</h2
             >
           </header>
 
-          <div class="collapsible-content brand-section__content">
+          <div class="collapsible-content section__content">
             <div
-              class="collapsible-content__content brand-section__collapsible-content slider"
+              class="collapsible-content__content section__collapsible-content slider brand-slider"
             >
               <ul class="grid swiper-wrapper">
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -336,7 +340,7 @@
                     ></div>
                   </a>
                 </li>
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -351,7 +355,7 @@
                     ></div>
                   </a>
                 </li>
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -366,7 +370,7 @@
                     ></div>
                   </a>
                 </li>
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -381,7 +385,7 @@
                     ></div>
                   </a>
                 </li>
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -396,7 +400,7 @@
                     ></div>
                   </a>
                 </li>
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -411,7 +415,7 @@
                     ></div>
                   </a>
                 </li>
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -426,7 +430,7 @@
                     ></div>
                   </a>
                 </li>
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -441,7 +445,7 @@
                     ></div>
                   </a>
                 </li>
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -456,7 +460,7 @@
                     ></div>
                   </a>
                 </li>
-                <li class="grid__item brand-card">
+                <li class="grid__item brand-card brand-slider__card">
                   <img
                     src="img/acer.png"
                     alt=""
@@ -474,11 +478,11 @@
               </ul>
             </div>
             <div
-              class="slider__scroll brand-section__slider--scroll brand-section__element--only-mobile"
+              class="slider__scroll section__slider--scroll section__element--only-mobile brand-slider__pagination"
             >
             </div>
             <button
-              class="more-button more-button--closed collapsible-content__more-button brand-section__element--no-mobile"
+              class="more-button more-button--closed collapsible-content__more-button section__element--no-mobile"
             >
               <span class="more-button__icon collapsible-content__icon"></span>
               <span class="more-button__title collapsible-content__closed-title"
@@ -490,7 +494,92 @@
             </button>
           </div>
         </section>
+        <section class="section service-section">
+          <header class="section__header">
+            <h2 class="section__text-header"
+              >Ремонт техники различных видов текхники</h2
+            >
+          </header>
 
+          <div class="collapsible-content section__content">
+            <div
+              class="collapsible-content__content section__collapsible-content slider service-slider"
+            >
+              <ul class="grid swiper-wrapper">
+                <li class="grid__item service-card service-slider__card">
+                  <span class="service-card__title">Ремонт ноутбуков</span>
+                  <a
+                    href="#"
+                    class="brand-card__button button button--appearance--outline button--type--arrow-right animated-button service-card__button"
+                  >
+                    <div
+                      class="button__icon animated-button__filtred-element"
+                    ></div>
+                  </a>
+                </li>
+                <li class="grid__item service-card service-slider__card">
+                  <span class="service-card__title">Ремонт ноутбуков</span>
+                  <a
+                    href="#"
+                    class="brand-card__button button button--appearance--outline button--type--arrow-right animated-button service-card__button"
+                  >
+                    <div
+                      class="button__icon animated-button__filtred-element"
+                    ></div>
+                  </a>
+                </li>
+                <li class="grid__item service-card service-slider__card">
+                  <span class="service-card__title">Ремонт ноутбуков</span>
+                  <a
+                    href="#"
+                    class="brand-card__button button button--appearance--outline button--type--arrow-right animated-button service-card__button"
+                  >
+                    <div
+                      class="button__icon animated-button__filtred-element"
+                    ></div>
+                  </a>
+                </li>
+                <li class="grid__item service-card service-slider__card">
+                  <span class="service-card__title">Ремонт ноутбуков</span>
+                  <a
+                    href="#"
+                    class="brand-card__button button button--appearance--outline button--type--arrow-right animated-button service-card__button"
+                  >
+                    <div
+                      class="button__icon animated-button__filtred-element"
+                    ></div>
+                  </a>
+                </li>
+                <li class="grid__item service-card service-slider__card">
+                  <span class="service-card__title">Ремонт ноутбуков</span>
+                  <a
+                    href="#"
+                    class="brand-card__button button button--appearance--outline button--type--arrow-right animated-button service-card__button"
+                  >
+                    <div
+                      class="button__icon animated-button__filtred-element"
+                    ></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="slider__scroll section__slider--scroll section__element--only-mobile service-slider__pagination"
+            >
+            </div>
+            <button
+              class="more-button more-button--closed collapsible-content__more-button section__element--no-mobile"
+            >
+              <span class="more-button__icon collapsible-content__icon"></span>
+              <span class="more-button__title collapsible-content__closed-title"
+                >Показать все</span
+              >
+              <span class="more-button__title collapsible-content__opened-title"
+                >Скрыть</span
+              >
+            </button>
+          </div>
+        </section>
         <script type="module" src="collapsible-content.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script type="module" src="slider.js"></script>

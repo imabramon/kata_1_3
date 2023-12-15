@@ -1,7 +1,7 @@
 @import 'mixins.scss';
 
 .grid {
-  @include link-reset;
+  @include list-reset;
   width: 100%;
   height: 100%;
   padding: 5px;

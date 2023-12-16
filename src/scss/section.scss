@@ -71,6 +71,7 @@
   &__content {
     margin-left: 16px;
     margin-right: auto;
+    overflow: hidden;
 
     @media (min-width: 768px) {
       margin-left: auto;

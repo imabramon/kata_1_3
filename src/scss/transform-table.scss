@@ -1,0 +1,39 @@
+.transform-table {
+  width: 100%;
+  @media (max-width: 767px) {
+    display: block;
+  }
+
+  &__thead {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__body {
+    @media (min-width: 768px) {
+      display: table-row-group !important;
+    }
+  }
+
+  &__th {
+  }
+
+  &__row {
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__data {
+    @media (max-width: 767px) {
+      display: block;
+    }
+    &::before {
+      @media (max-width: 767px) {
+        content: attr(data-name);
+        display: block;
+      }
+    }
+  }
+}

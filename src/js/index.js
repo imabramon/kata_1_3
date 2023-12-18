@@ -6,5 +6,6 @@ import './slider.js'
 import './brand-slider.js'
 import './service-slider.js'
 import './price-slider.js'
+import './collapsible-content.js'
 
 console.log('Works!')

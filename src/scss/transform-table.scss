@@ -2,6 +2,7 @@
   width: 100%;
   @media (max-width: 767px) {
     display: block;
+    margin-bottom: 16px;
   }
 
   &__thead {
@@ -14,9 +15,6 @@
     @media (min-width: 768px) {
       display: table-row-group !important;
     }
-  }
-
-  &__th {
   }
 
   &__row {

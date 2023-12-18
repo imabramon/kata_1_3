@@ -6,7 +6,11 @@
 
 .price-table {
   --price-table__border-radius: 6px;
-  --price-table__maket-width-px-value: 1536;
+  --price-table__maket-width-px-value: 768;
+
+  @media (min-width: 1440px) {
+    --price-table__maket-width-px-value: 1440;
+  }
 
   width: 100%;
 
@@ -15,13 +19,15 @@
     right: 5px;
   }
   display: block;
-  @media (max-width: 767px) {
-  }
+  // @media (max-width: 767px) {
+  //   table-layout: fixed;
+  // }
 
   &__thead {
     @media (min-width: 768px) {
       display: block;
       width: 100%;
+      margin-bottom: 16px;
     }
   }
 
@@ -46,7 +52,6 @@
   }
 
   &__element {
-    display: block !important;
     @media (min-width: 768px) {
       width: calc(
         var(--price-table__maket-element-width-px-value) /
@@ -55,25 +60,39 @@
 
       &--type-- {
         &name {
-          --price-table__maket-element-width-px-value: 744;
+          --price-table__maket-element-width-px-value: 372;
         }
 
         &price {
-          --price-table__maket-element-width-px-value: 192;
-          // --price-table__maket-element-width-px: 96;
-          // width: 96px;
-          // width: calc(96px / var(--price-table__body_size) * 100vw);
+          --price-table__maket-element-width-px-value: 96;
         }
 
         &time {
-          // --price-table__maket-element-width-px: 101;
-
-          // width: 101px;
+          --price-table__maket-element-width-px-value: 101;
         }
 
         &button {
-          // --price-table__maket-element-width-px: 119;
-          // width: 119px;
+          --price-table__maket-element-width-px-value: 119;
+        }
+      }
+    }
+
+    @media (min-width: 1440px) {
+      &--type-- {
+        &name {
+          --price-table__maket-element-width-px-value: 468;
+        }
+
+        &price {
+          --price-table__maket-element-width-px-value: 227;
+        }
+
+        &time {
+          --price-table__maket-element-width-px-value: 192;
+        }
+
+        &button {
+          --price-table__maket-element-width-px-value: 119;
         }
       }
     }
@@ -92,37 +111,91 @@
 
   &__row {
     @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      min-width: 260px;
+      width: 260px;
+      height: 200px;
+      border-radius: 6px;
+      background: #fff;
+      padding: 16px;
+      position: relative;
     }
 
     @media (min-width: 768px) {
       display: flex;
-    }
-  }
+      border: {
+        bottom: 1px solid #eaeaea;
+      }
+      height: 64px;
 
-  &__data {
-    @media (max-width: 767px) {
-    }
-    &::before {
-      @media (max-width: 767px) {
+      &:last-child {
+        border: {
+          bottom: none;
+        }
       }
     }
   }
 
-  // @media (min-width: 768px) {
-  //   & &__body &__row:first-child &__data:first-child {
-  //     border-top-left-radius: var(--price-table__border-radius);
-  //   }
+  &__data {
+    color: #1b1c21;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
 
-  //   & &__body &__row:first-child &__data:last-child {
-  //     border-top-right-radius: var(--price-table__border-radius);
-  //   }
+    @media (max-width: 767px) {
+      display: block;
+      margin-bottom: 16px;
+    }
+    &::before {
+      @media (max-width: 767px) {
+        color: #7e7e82;
+        font-family: TT Lakes;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; /* 114.286% */
+        margin-bottom: 4px;
+      }
+    }
+  }
 
-  //   & &__body &__row:last-child &__data:first-child {
-  //     border-bottom-left-radius: var(--price-table__border-radius);
-  //   }
+  &__button {
+    padding: {
+      left: 12px;
+      right: 12px;
+    }
 
-  //   & &__body &__row:last-child &__data:last-child {
-  //     border-bottom-right-radius: var(--price-table__border-radius);
-  //   }
-  // }
+    @media (max-width: 767px) {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+    }
+
+    @media (min-width: 768px) {
+      --price-table__maket-element-width-px-value: 119;
+      width: calc(
+        var(--price-table__maket-element-width-px-value) /
+          var(--price-table__maket-width-px-value) * 100vw
+      );
+    }
+  }
+
+  &__button-title {
+    text-align: left;
+    color: #fff;
+    text-align: right;
+    font-family: 'TT Lakes';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+  }
 }

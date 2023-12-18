@@ -581,6 +581,9 @@
           </div>
         </section>
         <section class="section">
+          <header class="section__header">
+            <h2 class="section__text-header">Цены на услуги</h2>
+          </header>
           <div class="section__content">
             <table class="transform-table price-slider price-table">
               <thead class="transform-table__thead price-table__thead">
@@ -631,18 +634,48 @@
                     data-name=""
                   >
                     <button
-                      class="button button--type--submit button--appearance--content-filled drop-form-menu__button"
+                      class="button button--type--submit button--appearance--content-filled price-table__button"
                     >
-                      <span class="drop-form-menu__button-title">
-                        Заказать
-                      </span>
+                      <span class="price-table__button-title"> Заказать </span>
+                      <span class="button__icon"></span> </button
+                  ></td>
+                </tr>
+                <tr
+                  class="transform-table__row price-slider__card price-table__row"
+                >
+                  <td
+                    class="transform-table__data price-table__data price-table__element price-table__element--type--name"
+                    data-name="Ремонтные услуги"
+                  >
+                    Диагностика
+                  </td>
+                  <td
+                    class="transform-table__data price-table__data price-table__element price-table__element--type--price"
+                    data-name="Цена"
+                  >
+                    Бесплатно
+                  </td>
+                  <td
+                    class="transform-table__data price-table__data price-table__element price-table__element--type--time"
+                    data-name="Срок"
+                  >
+                    30 мин
+                  </td>
+                  <td
+                    class="transform-table__data price-table__data price-table__element price-table__element--button"
+                    data-name=""
+                  >
+                    <button
+                      class="button button--type--submit button--appearance--content-filled price-table__button"
+                    >
+                      <span class="price-table__button-title"> Заказать </span>
                       <span class="button__icon"></span> </button
                   ></td>
                 </tr>
               </tbody>
             </table>
+            <div class="slider__scroll price-slider__pagination"> </div>
           </div>
-          <div class="slider__scroll price-slider__pagination"> </div>
         </section>
         <script type="module" src="collapsible-content.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

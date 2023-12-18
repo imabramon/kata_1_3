@@ -15,6 +15,7 @@
 
   &__photo {
     display: block;
+    width: 100%;
 
     @media (min-width: 768px) {
       width: 360px;

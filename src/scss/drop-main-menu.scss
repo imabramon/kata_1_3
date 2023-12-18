@@ -10,7 +10,8 @@
   @include drop-menu__set-orentation('right');
 
   @media (min-width: 1440px) {
-    position: static !important;
+    position: fixed !important;
+    left: calc((100vw - 1440px) / 2) !important;
   }
 
   &__button {
@@ -28,7 +29,7 @@
     padding-right: 29px;
     padding-top: 18px;
     margin-bottom: 50px;
-    @media (max-width: 1440px) {
+    @media (max-width: 1439px) {
       margin-bottom: 24px;
     }
   }
@@ -38,7 +39,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    @media (max-width: 1440px) {
+    @media (max-width: 1439px) {
       gap: 24px;
     }
     height: 100%;

@@ -1,0 +1,12 @@
+.site {
+  max-width: 1440px;
+  position: relative;
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+  height: 100vh;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}

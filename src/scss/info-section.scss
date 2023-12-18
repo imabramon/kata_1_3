@@ -20,4 +20,10 @@
   &__text-content {
     margin-bottom: 16px;
   }
+
+  &__collapsible-content {
+    @media (max-width: 767px) {
+      padding-left: 16px;
+    }
+  }
 }

@@ -64,6 +64,12 @@
       --button-icon-width: 27.429px;
       background-image: url('../img/goside.svg');
     }
+
+    &link .button__icon {
+      --button-icon-height: 27.429px;
+      --button-icon-width: 24px;
+      background-image: url('../img/more.svg');
+    }
   }
 
   &--appearance-- {
@@ -78,6 +84,15 @@
       width: fit-content;
       border-radius: 16px;
       padding: 4px 8px;
+    }
+
+    &without-background {
+      background: none;
+      width: fit-content;
+
+      & .button__title {
+        text-align: left;
+      }
     }
   }
 }

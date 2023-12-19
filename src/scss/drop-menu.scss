@@ -28,7 +28,7 @@
   right: var(--drop-menu__opened-right);
 
   background-color: white;
-  z-index: 2;
+  z-index: 3;
   box-shadow: var(--drop-menu__box-shadow-ofset-size-value) 0px 52px 0px
     rgba(14, 24, 80, 0.2);
 
@@ -53,6 +53,7 @@
   &--closed {
     left: var(--drop-menu__closed-left);
     right: var(--drop-menu__closed-right);
+    z-index: unset;
 
     & > .drop-menu__content-out-button {
       @media (min-width: 768px) {
@@ -70,7 +71,7 @@
       height: 100%;
       width: 100%;
       opacity: 0;
-      z-index: -1;
+      z-index: 2;
       pointer-events: none;
 
       transition: all 0.5s ease-in-out;
@@ -84,7 +85,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        z-index: 1;
+        z-index: 2;
         opacity: 0.9605;
         background-color: #fff;
         transition: opacity 0.5s ease-out;

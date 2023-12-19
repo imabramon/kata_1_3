@@ -1,0 +1,198 @@
+@import 'css-functions.scss';
+
+@mixin setELementMaketWidth($width) {
+  --price-table__maket-element-width-px-value: $width * 2;
+}
+
+.price-table {
+  --price-table__border-radius: 6px;
+  --price-table__maket-width-px-value: 768;
+
+  @media (min-width: $desktop-min-width-px) {
+    --price-table__maket-width-px-value: #{$desktop-min-width};
+  }
+
+  width: 100%;
+
+  padding: {
+    left: 5px;
+    right: 5px;
+  }
+  display: block;
+  // @media (max-width: $mobile-max-width-px) {
+  //   table-layout: fixed;
+  // }
+
+  &__thead {
+    @media (min-width: $tablet-min-width-px) {
+      display: block;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__thead-row {
+    display: flex !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: auto;
+  }
+
+  &__body {
+    @media (min-width: $tablet-min-width-px) {
+      background: white;
+      display: block !important;
+      border-radius: 6px;
+      width: auto !important;
+      padding: {
+        left: 16px;
+        right: 16px;
+      }
+    }
+  }
+
+  &__element {
+    @media (min-width: $tablet-min-width-px) {
+      width: calc(
+        var(--price-table__maket-element-width-px-value) /
+          var(--price-table__maket-width-px-value) * 100vw
+      );
+
+      &--type-- {
+        &name {
+          --price-table__maket-element-width-px-value: 372;
+        }
+
+        &price {
+          --price-table__maket-element-width-px-value: 96;
+        }
+
+        &time {
+          --price-table__maket-element-width-px-value: 101;
+        }
+
+        &button {
+          --price-table__maket-element-width-px-value: 119;
+        }
+      }
+    }
+
+    @media (min-width: $desktop-min-width-px) {
+      &--type-- {
+        &name {
+          --price-table__maket-element-width-px-value: 468;
+        }
+
+        &price {
+          --price-table__maket-element-width-px-value: 227;
+        }
+
+        &time {
+          --price-table__maket-element-width-px-value: 192;
+        }
+
+        &button {
+          --price-table__maket-element-width-px-value: 119;
+        }
+      }
+    }
+  }
+
+  &__th {
+    display: block;
+    color: $second-text-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    text-align: left;
+  }
+
+  &__row {
+    @media (max-width: $mobile-max-width-px) {
+      display: flex;
+      flex-direction: column;
+      min-width: 260px;
+      width: 260px;
+      height: 200px;
+      border-radius: 6px;
+      background: white;
+      padding: 16px;
+      position: relative;
+    }
+
+    @media (min-width: $tablet-min-width-px) {
+      display: flex;
+      border: {
+        bottom: 1px solid $main-border-color;
+      }
+      height: 64px;
+
+      &:last-child {
+        border: {
+          bottom: none;
+        }
+      }
+    }
+  }
+
+  &__data {
+    color: $main-text-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $mobile-max-width-px) {
+      display: block;
+      margin-bottom: 16px;
+    }
+    &::before {
+      @media (max-width: $mobile-max-width-px) {
+        color: $second-text-color;
+        font-family: TT Lakes;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; /* 114.286% */
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  &__button {
+    padding: {
+      left: 12px;
+      right: 12px;
+    }
+
+    @media (max-width: $mobile-max-width-px) {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+    }
+
+    @media (min-width: $tablet-min-width-px) {
+      width: 119px;
+    }
+  }
+
+  &__button-title {
+    text-align: left;
+    color: white;
+    text-align: right;
+    font-family: $main-font;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,30 @@
+@import 'mixins.scss';
+
+.aside-nav-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
+
+  &__item {
+    @include list-reset;
+    margin-right: 17px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &--no-mobile-visible {
+    @media (max-width: $mobile-max-width-px) {
+      display: none;
+    }
+  }
+
+  &__nav-button {
+    margin-right: 17px;
+  }
+
+  &__button {
+    @include button-reset;
+  }
+}

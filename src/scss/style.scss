@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+@import './colors.scss';
+@import './fonts.scss';
+@import './screen-sizes.scss';
+
+@import 'page-header.scss';
+@import 'aside-nav-list.scss';
+@import 'logo.scss';
+@import 'info-section.scss';
+@import 'content.scss';
+@import 'header.scss';
+@import 'more-button.scss';
+@import 'section.scss';
+@import 'collapsible-content.scss';
+@import 'text-content.scss';
+@import 'nav-list.scss';
+@import 'paragraph.scss';
+@import 'menu-button.scss';
+@import 'drop-main-menu.scss';
+@import 'lang-switcher.scss';
+@import 'button.scss';
+@import 'animated-button.scss';
+@import 'grid.scss';
+@import 'brand-card.scss';
+@import 'slider.scss';
+@import 'text-with-underline-animation.scss';
+@import 'menu-nav.scss';
+@import 'drop-menu.scss';
+@import 'form.scss';
+@import 'drop-form-menu.scss';
+@import './service-card.scss';
+@import './service-section.scss';
+@import './transform-table.scss';
+@import './price-table.scss';
+@import './price-section.scss';
+@import './body.scss';
+@import './footer.scss';
+@import './site.scss';

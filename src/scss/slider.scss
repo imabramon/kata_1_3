@@ -1,0 +1,25 @@
+.slider {
+  &__scroll {
+    display: flex;
+    gap: 12px;
+    content: '';
+    height: 12px;
+    width: fit-content !important; /*Нужно для перебивки стиля из swipper*/
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+  &__item {
+    display: inline-block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $slider__item-color;
+
+    &--current {
+      background-color: $slider__item-color--current;
+    }
+  }
+}

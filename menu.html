@@ -1,93 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Kata 1.4</title>
-</head>
-<body class="geometry-reset">
-    <aside class="drop-right-menu">
-        <header class="drop-right-menu__header">
-            <button class="button button-reset button--type--close drop-right-menu__close-button animated-button drop-right-menu__button">
-                <div class="button__icon animated-button__filtred-element"></div>
+  </head>
+  <body class="">
+    <aside class="drop-main-menu">
+      <header class="drop-main-menu__header">
+        <button
+          class="button button--type--close drop-main-menu__close-button animated-button drop-main-menu__button"
+        >
+          <div class="button__icon animated-button__filtred-element"></div>
+        </button>
+        <a href="#" class="link-reset drop-main-menu__logo-wrapper"
+          ><img src="img/logo.png" alt=""
+        /></a>
+        <button
+          class="button button--type--search animated-button drop-main-menu__button"
+        >
+          <div class="button__icon animated-button__filtred-element"></div>
+        </button>
+      </header>
+      <nav class="drop-main-menu__nav menu-nav">
+        <ul class="drop-main-menu__links-list">
+          <li
+            class="drop-main-menu__link-item drop-main-menu__link-item--selected"
+          >
+            <a href="#" class="link-reset">Ремонт техники</a>
+          </li>
+          <li class="drop-main-menu__link-item">
+            <a href="#" class="link-reset">Услуги и сервисы</a>
+          </li>
+          <li class="drop-main-menu__link-item">
+            <a href="#" class="link-reset">Корпоративным клиентам</a>
+          </li>
+          <li class="drop-main-menu__link-item">
+            <a href="#" class="link-reset">Продавцам техники</a>
+          </li>
+          <li class="drop-main-menu__link-item">
+            <a href="#" class="link-reset">Партнерам</a>
+          </li>
+          <li class="drop-main-menu__link-item">
+            <a href="#" class="link-reset">Производителям</a>
+          </li>
+          <li class="drop-main-menu__link-item">
+            <a href="#" class="link-reset">Наши сервисные центры</a>
+          </li>
+          <li class="drop-main-menu__link-item">
+            <a href="#" class="link-reset">Контакты</a>
+          </li>
+          <li class="drop-main-menu__link-item">
+            <a href="#" class="link-reset"></a>
+          </li>
+        </ul>
+      </nav>
+      <footer class="drop-main-menu__footer">
+        <ul class="drop-main-menu__additional_buttons">
+          <li class="drop-main-menu__additional_button">
+            <button
+              class="button button--type--phone animated-button drop-main-menu__button"
+            >
+              <div class="button__icon animated-button__filtred-element"></div>
             </button>
-            <a href="#" class="link-reset drop-right-menu__logo-wrapper"><img src="img/logo.png" alt=""></a>
-            <button class="button button-reset button--type--search animated-button drop-right-menu__button">
-                <div class="button__icon animated-button__filtred-element"></div>
+          </li>
+          <li class="drop-main-menu__additional_button">
+            <button
+              class="button button--type--chat animated-button drop-main-menu__button"
+            >
+              <div class="button__icon animated-button__filtred-element"></div>
             </button>
-        </header>
-        <nav class="drop-right-menu__nav menu-nav">
-            <ul class="list-reset drop-right-menu__links-list">
-                <li class="drop-right-menu__link-item drop-right-menu__link-item--selected list-reset">
-                    <a href="#" class="link-reset">Ремонт техники</a>
-                </li>
-                <li class="drop-right-menu__link-item list-reset">
-                    <a href="#" class="link-reset">Услуги и сервисы</a>
-                </li>
-                <li class="drop-right-menu__link-item list-reset">
-                    <a href="#" class="link-reset">Корпоративным клиентам</a>
-                </li>
-                <li class="drop-right-menu__link-item list-reset">
-                    <a href="#" class="link-reset">Продавцам техники</a>
-                </li>
-                <li class="drop-right-menu__link-item list-reset">
-                    <a href="#" class="link-reset">Партнерам</a>
-                </li>
-                <li class="drop-right-menu__link-item list-reset">
-                    <a href="#" class="link-reset">Производителям</a>
-                </li>
-                <li class="drop-right-menu__link-item list-reset">
-                    <a href="#" class="link-reset">Наши сервисные центры</a>
-                </li>
-                <li class="drop-right-menu__link-item list-reset">
-                    <a href="#" class="link-reset">Контакты</a>
-                </li>
-                <li class="drop-right-menu__link-item list-reset">
-                    <a href="#" class="link-reset"></a>
-                </li>
-            </ul>
-        </nav>
-        <footer class="drop-right-menu__footer">
-            <ul class="list-reset drop-right-menu__additional_buttons">
-                <li class="list-reset">
-                    <button class="button button-reset button--type--phone animated-button drop-right-menu__button">
-                        <div class="button__icon animated-button__filtred-element"></div>
-                    </button>
-                </li>
-               <li class="list-reset">
-                    <button class="button button-reset button--type--chat animated-button drop-right-menu__button">
-                        <div class="button__icon animated-button__filtred-element"></div>
-                    </button>
-               </li>
-                <li class="list-reset">
-                    <button class="button button-reset button--type--profile animated-button drop-right-menu__button">
-                        <div class="button__icon animated-button__filtred-element"></div>
-                    </button>
-                </li>
-            </ul>
-            <address>
-                <a href="mailto: mail@cps.com" class="link-reset drop-right-menu__email-title text-with-underline-animation">
-                    mail@cps.com
-                </a>
-            </address>
-            <address>
-                <a href="tel: 88008908900" class="link-reset drop-right-menu__phone-title text-with-underline-animation">
-                    8 800 890 8900
-                </a>
-            </address>
-            <ul class="lang-switcher list-reset">
-                <li class="lang-switcher__lang-item lang-switcher__lang-item--selected list-reset ">
-                    <button class="button-reset">RU</button>
-                </li>
-                <li class="lang-switcher__lang-item list-reset">
-                    <button class="button-reset">EN</button>
-                </li>
-                <li class="lang-switcher__lang-item list-reset">
-                    <button class="button-reset">CH</button>
-                </li>
-            </ul>
-        </footer>
+          </li>
+          <li class="drop-main-menu__additional_button">
+            <button
+              class="button button--type--profile animated-button drop-main-menu__button"
+            >
+              <div class="button__icon animated-button__filtred-element"></div>
+            </button>
+          </li>
+        </ul>
+        <address>
+          <a
+            href="mailto: mail@cps.com"
+            class="link-reset drop-main-menu__email-title text-with-underline-animation"
+          >
+            mail@cps.com
+          </a>
+        </address>
+        <address>
+          <a
+            href="tel: 88008908900"
+            class="link-reset drop-main-menu__phone-title text-with-underline-animation"
+          >
+            8 800 890 8900
+          </a>
+        </address>
+        <ul class="lang-switcher">
+          <li
+            class="lang-switcher__lang-item lang-switcher__lang-item--selected"
+          >
+            <button class="">RU</button>
+          </li>
+          <li class="lang-switcher__lang-item">
+            <button class="">EN</button>
+          </li>
+          <li class="lang-switcher__lang-item">
+            <button class="">CH</button>
+          </li>
+        </ul>
+      </footer>
     </aside>
-</body>
+  </body>
 </html>

@@ -1,0 +1,31 @@
+@import 'mixins.scss';
+
+.info-section {
+  font-family: $main-font;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+
+  --collapsible-content__closed-title: 'Читать далее';
+
+  &__header {
+    @include geometry-reset;
+    margin-bottom: 24px;
+  }
+
+  &__nav {
+    margin-bottom: 24px;
+  }
+
+  &__text-content {
+    margin-bottom: 16px;
+  }
+
+  &__collapsible-content {
+    @media (max-width: $mobile-max-width-px) {
+      padding-left: 16px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import './mixins.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: {
+    left: 16px;
+    right: 16px;
+  }
+
+  &__input {
+    border-radius: 8px;
+    border: 1px solid $main-border-color;
+    background: white;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid $main-border-color;
+    background: white;
+
+    padding: 12px 16px;
+  }
+
+  &__text {
+    color: $second-text-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+  }
+
+  &__textarea {
+    height: unset;
+    &::-webkit-resizer {
+      display: none;
+    }
+  }
+
+  &__link {
+    @include link-reset;
+    color: $main-color;
+  }
+}

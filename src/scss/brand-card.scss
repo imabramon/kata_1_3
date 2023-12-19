@@ -1,0 +1,22 @@
+.brand-card {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid $main-border-color;
+  background: white;
+  -moz-transition: box-shadow 0.5s ease-out;
+  -o-transition: box-shadow 0.5s ease-out;
+  -webkit-transition: box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-out;
+
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  &__company-logo {
+    margin-right: auto;
+  }
+}

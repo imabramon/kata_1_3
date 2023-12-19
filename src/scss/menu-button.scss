@@ -1,0 +1,36 @@
+@import 'mixins.scss';
+
+.menu-button {
+  @include button-reset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__title {
+    margin-right: 8px;
+    font-weight: 500;
+
+    @media (max-width: 1119px) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &--type-- {
+      &checkstatus {
+        background-image: url('../img/checkstatus.svg');
+      }
+
+      &repair {
+        background-image: url('../img/repair.svg');
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import 'mixins.scss';
+
+.button {
+  @include button-reset;
+
+  --button__animation-time: 0.5s;
+
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $main-color;
+
+  &__icon {
+    --button-icon-size: 17px;
+    --button-icon-height: var(--button-icon-size);
+    --button-icon-width: var(--button-icon-size);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: '';
+    width: var(--button-icon-width);
+    height: var(--button-icon-height);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--type-- {
+    &close .button__icon {
+      --button-icon-size: 16px;
+      background-image: url('../img/close.svg');
+    }
+
+    &search .button__icon {
+      --button-icon-size: 17px;
+      background-image: url('../img/search.svg');
+    }
+
+    &phone .button__icon {
+      --button-icon-size: 18px;
+      background-image: url('../img/phone.svg');
+    }
+
+    &chat .button__icon {
+      --button-icon-size: 20px;
+      background-image: url('../img/chat_wo_bg.svg');
+    }
+
+    &profile .button__icon {
+      --button-icon-height: 18px;
+      --button-icon-width: 20px;
+      background-image: url('../img/profile_wo_bg.svg');
+    }
+
+    &arrow-right .button__icon {
+      --button-icon-height: 12px;
+      --button-icon-width: 7.5px;
+      background-image: url('../img/arrow-right.svg');
+    }
+
+    &submit .button__icon {
+      --button-icon-height: 24px;
+      --button-icon-width: 27.429px;
+      background-image: url('../img/goside.svg');
+    }
+
+    &link .button__icon {
+      --button-icon-height: 27.429px;
+      --button-icon-width: 24px;
+      background-image: url('../img/more.svg');
+    }
+  }
+
+  &--appearance-- {
+    &outline {
+      background-color: transparent;
+      border-color: $main-color;
+      border-style: solid;
+      border-width: 2px;
+    }
+
+    &content-filled {
+      width: fit-content;
+      border-radius: 20px;
+      padding: 4px 8px;
+    }
+
+    &without-background {
+      background: none;
+      width: fit-content;
+
+      & .button__title {
+        text-align: left;
+      }
+    }
+  }
+}

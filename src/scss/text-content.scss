@@ -1,0 +1,17 @@
+.text-content {
+  display: flex;
+  flex-direction: column;
+
+  &__paragraph {
+    margin-bottom: 21px;
+  }
+
+  &--wrapped {
+    height: 90px;
+    overflow: hidden;
+
+    @media (min-width: $tablet-min-width-px) {
+      height: 160px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.header {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+
+  &__title {
+    padding-left: 16px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 40px;
+      width: 4px;
+      background: url('../img/highlight.svg');
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
+}

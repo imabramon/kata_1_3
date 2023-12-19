@@ -1,0 +1,34 @@
+@import 'mixins.scss';
+@import './css-functions.scss';
+
+.body {
+  @include geometry-reset;
+  overflow-x: hidden;
+  background: $main-background-color;
+  height: 100vh;
+
+  &__element--centred {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__header {
+    @media (min-width: $desktop-min-width-px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__content {
+    @media (min-width: $desktop-min-width-px) {
+      width: $desktop-min-width-px - 320px;
+      // transform: translateX(320px);
+      margin-left: 320px;
+    }
+  }
+
+  &__price-section {
+    margin-bottom: 47px;
+  }
+}

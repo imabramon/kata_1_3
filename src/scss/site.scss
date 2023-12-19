@@ -1,0 +1,12 @@
+.site {
+  max-width: $desktop-min-width-px;
+  position: relative;
+  @media (min-width: $desktop-min-width-px) {
+    display: flex;
+  }
+  height: 100vh;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}

@@ -1,9 +1,4 @@
 export function initDropMenu(object) {
-  // let menuClosedClass = 'drop-menu--closed'
-  // let elementToBlur = document.querySelector(`.${object.elementToBlurClass}`)
-  // let menu = document.querySelector(`.${object.menuClass}`)
-  // let controls = document.querySelectorAll(`.${object.controlClass}`)
-
   function blurCloseFunction(evt) {
     if (evt.skipThisClick) {
       return
@@ -75,62 +70,6 @@ export function initDropMenu(object) {
   } else {
     window.drop_menus.push(menuObeject)
   }
-
-  // function toggleCurrentMenu(menu) {
-  //   let flag = false
-
-  //   function func() {
-  //     if (flag) {
-  //       window.currentOpennedMenu = undefined
-  //       flag = false
-  //       return
-  //     }
-
-  //     window.currentOpennedMenu = menu
-  //     flag = true
-  //   }
-
-  //   return func
-  // }
-
-  // let thisMenuToggle = toggleCurrentMenu(object.menuClass)
-
-  // function toggleState(evt) {
-  //   elementToBlur.classList.toggle(object.blurClass)
-  //   menu.classList.toggle(menuClosedClass)
-  //   thisMenuToggle()
-  // }
-
-  // function blurCloseFunction(evt) {
-  //   if (evt.skipThisClick) {
-  //     return
-  //   }
-
-  //   if (evt.target.closest(`.${object.menuClass}`)) {
-  //     return
-  //   }
-
-  //   if (evt.currentTarget.classList.contains(object.blurClass)) {
-  //     toggleState()
-  //   }
-  // }
-
-  // controls.forEach(function (el) {
-  //   el.addEventListener('click', function (evt) {
-  // let isCurrentMenuOpenned = window.currentOpennedMenu === object.menuClass
-  // let isAnyMenuOpensBefore = !window.currentOpennedMenu
-  // if (!isCurrentMenuOpenned && !isAnyMenuOpensBefore) {
-  //   return evt
-  // }
-  // toggleState()
-  // evt.skipThisClick = true
-  // if (elementToBlur.classList.contains(object.blurClass)) {
-  //   elementToBlur.addEventListener('click', blurCloseFunction)
-  // } else {
-  //   elementToBlur.removeEventListener('click', blurCloseFunction)
-  // }
-  //   })
-  // })
 }
 
 export default {}

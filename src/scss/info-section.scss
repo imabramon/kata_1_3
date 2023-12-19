@@ -8,6 +8,8 @@
   justify-content: flex-start;
   width: 100%;
 
+  --collapsible-content__closed-title: 'Читать далее';
+
   &__header {
     @include geometry-reset;
     margin-bottom: 24px;

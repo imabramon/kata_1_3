@@ -17,8 +17,19 @@
     overflow: hidden;
   }
 
-  &__opened-title {
-    display: none;
+  &__title {
+    --collapsible-content__opened-title-value: var(
+      --collapsible-content__opened-title,
+      'Скрыть'
+    );
+    --collapsible-content__closed-title-value: var(
+      --collapsible-content__closed-title,
+      'Показать все'
+    );
+
+    &::after {
+      content: var(--collapsible-content__closed-title-value);
+    }
   }
 
   &__icon {
@@ -34,12 +45,8 @@
       height: fit-content;
     }
 
-    & .collapsible-content__opened-title {
-      display: unset;
-    }
-
-    & .collapsible-content__closed-title {
-      display: none;
+    & .collapsible-content__title::after {
+      content: var(--collapsible-content__opened-title-value);
     }
 
     & .collapsible-content__icon {

@@ -1,7 +1,7 @@
 @import 'mixins.scss';
 
 .info-section {
-  font-family: 'TT Lakes';
+  font-family: $main-font;
   padding-top: 25px;
   display: flex;
   flex-direction: column;

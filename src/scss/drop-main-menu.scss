@@ -70,7 +70,7 @@
     display: block;
     width: fit-content;
     color: $main-text-color;
-    font-family: 'TT Lakes';
+    font-family: $main-font;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -89,7 +89,7 @@
     display: block;
     color: $main-text-color;
     width: fit-content;
-    font-family: 'TT Lakes';
+    font-family: $main-font;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -109,7 +109,7 @@
   &__link-item {
     @include list-reset;
     color: $main-text-color;
-    font-family: 'TT Lakes';
+    font-family: $main-font;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

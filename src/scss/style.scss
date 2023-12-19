@@ -1,10 +1,11 @@
 * {
   box-sizing: border-box;
 }
-@import '../fonts/TTLakes.css';
-@import 'page-header.scss';
-@import './colors.scss';
 
+@import './colors.scss';
+@import './fonts.scss';
+
+@import 'page-header.scss';
 @import 'aside-nav-list.scss';
 @import 'logo.scss';
 @import 'info-section.scss';

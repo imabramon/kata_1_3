@@ -12,6 +12,7 @@
   @media (min-width: 1440px) {
     position: fixed !important;
     left: calc((100vw - 1440px) / 2) !important;
+    box-shadow: none !important;
   }
 
   &__button {

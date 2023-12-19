@@ -3,14 +3,14 @@
   width: 240px;
   height: 160px;
   border-radius: 6px;
-  border: 1px solid #eaeaea;
-  background: #fff;
+  border: 1px solid $main-border-color;
+  background: white;
   padding: 16px;
   flex-direction: column;
   justify-content: space-between;
 
   &__title {
-    color: #1b1c21;
+    color: $main-text-color;
     font-family: TT Lakes;
     font-size: 16px;
     font-style: normal;

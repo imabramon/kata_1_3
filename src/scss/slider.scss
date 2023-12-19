@@ -16,10 +16,10 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #dddddd;
+    background-color: $slider__item-color;
 
     &--current {
-      background-color: #b5b6bc;
+      background-color: $slider__item-color--current;
     }
   }
 }

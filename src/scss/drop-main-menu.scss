@@ -16,7 +16,7 @@
   }
 
   &__button {
-    --animated-button__current-color: #ff3e79;
+    --animated-button__current-color: $main-color;
     --animated-button__tagret-color: white;
     --animated-button__target-filter: invert(46%) sepia(35%) saturate(7462%)
       hue-rotate(319deg) brightness(103%) contrast(106%);
@@ -69,7 +69,7 @@
 
     display: block;
     width: fit-content;
-    color: #1b1c21;
+    color: $main-text-color;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;
@@ -87,7 +87,7 @@
     @include link-reset;
 
     display: block;
-    color: #1b1c21;
+    color: $main-text-color;
     width: fit-content;
     font-family: 'TT Lakes';
     font-size: 24px;
@@ -108,7 +108,7 @@
 
   &__link-item {
     @include list-reset;
-    color: #1b1c21;
+    color: $main-text-color;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;
@@ -121,11 +121,11 @@
     transition: all 0.5s ease-out;
 
     &:hover {
-      color: #7e7e82;
+      color: $second-text-color;
     }
 
     &--selected {
-      color: #7e7e82;
+      color: $second-text-color;
 
       &::before {
         content: '';

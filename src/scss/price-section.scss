@@ -2,7 +2,7 @@
   &__text {
     @include geometry-reset;
 
-    color: #1b1c21;
+    color: $main-text-color;
 
     font-family: 'TT Lakes';
     font-size: 14px;
@@ -22,7 +22,7 @@
   }
 
   &__link {
-    color: #1b1c21;
+    color: $main-text-color;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;

@@ -14,17 +14,17 @@
   );
 
   --animated-button__current-color: white;
-  --animated-button__tagret-color: #ff3e79;
+  --animated-button__tagret-color: $main-color;
   --animated-button__target-filter: brightness(0) saturate(100%) invert(97%)
     sepia(0%) saturate(7487%) hue-rotate(77deg) brightness(110%) contrast(100%);
 
   &__header {
-    background: linear-gradient(to right, #f8f8f8, #ffffff);
+    background: linear-gradient(to right, $main-background-color, white);
     width: 100%;
   }
 
   &__text-header {
-    color: #7e7e82;
+    color: $second-text-color;
     font-family: TT Lakes;
     font-size: 16px;
     font-style: normal;

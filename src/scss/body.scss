@@ -3,7 +3,7 @@
 
 .body {
   @include geometry-reset;
-  background: #f8f8f8;
+  background: $main-background-color;
   height: 100vh;
 
   &__element--centred {

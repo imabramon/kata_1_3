@@ -40,7 +40,7 @@
 
   &__text {
     @include geometry-reset;
-    color: #7e7e82;
+    color: $second-text-color;
     font-family: 'TT Lakes';
     font-size: 14px;
     font-style: normal;

@@ -78,6 +78,11 @@
     }
 
     &--blurred {
+      & * {
+        //sorry
+        // pointer-events: none;
+      }
+
       &::after {
         content: '';
         position: fixed;

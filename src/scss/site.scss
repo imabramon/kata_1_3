@@ -1,7 +1,7 @@
 .site {
-  max-width: 1440px;
+  max-width: $desktop-min-width-px;
   position: relative;
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-min-width-px) {
     display: flex;
   }
   height: 100vh;

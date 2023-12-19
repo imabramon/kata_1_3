@@ -24,7 +24,7 @@
   }
 
   &__collapsible-content {
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       padding-left: 16px;
     }
   }

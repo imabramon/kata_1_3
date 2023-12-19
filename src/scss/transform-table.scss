@@ -1,34 +1,34 @@
 .transform-table {
   width: 100%;
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-max-width-px) {
     display: block;
     margin-bottom: 16px;
   }
 
   &__thead {
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       display: none;
     }
   }
 
   &__body {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-min-width-px) {
       display: table-row-group !important;
     }
   }
 
   &__row {
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       display: block;
     }
   }
 
   &__data {
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       display: block;
     }
     &::before {
-      @media (max-width: 767px) {
+      @media (max-width: $mobile-max-width-px) {
         content: attr(data-name);
         display: block;
       }

@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: flex-start;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-min-width-px) {
     flex-direction: row;
     padding-left: 17px;
     padding-right: 25px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-min-width-px) {
     padding-left: 35px;
   }
 
@@ -17,13 +17,13 @@
     display: block;
     width: 100%;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-min-width-px) {
       width: 360px;
       height: 208px;
       margin-left: 48px;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $desktop-min-width-px) {
       width: 531.35px;
       height: 307px;
     }

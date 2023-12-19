@@ -8,8 +8,8 @@
   --price-table__border-radius: 6px;
   --price-table__maket-width-px-value: 768;
 
-  @media (min-width: 1440px) {
-    --price-table__maket-width-px-value: 1440;
+  @media (min-width: $desktop-min-width-px) {
+    --price-table__maket-width-px-value: #{$desktop-min-width};
   }
 
   width: 100%;
@@ -19,12 +19,12 @@
     right: 5px;
   }
   display: block;
-  // @media (max-width: 767px) {
+  // @media (max-width: $mobile-max-width-px) {
   //   table-layout: fixed;
   // }
 
   &__thead {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-min-width-px) {
       display: block;
       width: 100%;
       margin-bottom: 16px;
@@ -39,7 +39,7 @@
   }
 
   &__body {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-min-width-px) {
       background: white;
       display: block !important;
       border-radius: 6px;
@@ -52,7 +52,7 @@
   }
 
   &__element {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-min-width-px) {
       width: calc(
         var(--price-table__maket-element-width-px-value) /
           var(--price-table__maket-width-px-value) * 100vw
@@ -77,7 +77,7 @@
       }
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $desktop-min-width-px) {
       &--type-- {
         &name {
           --price-table__maket-element-width-px-value: 468;
@@ -110,7 +110,7 @@
   }
 
   &__row {
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       display: flex;
       flex-direction: column;
       min-width: 260px;
@@ -122,7 +122,7 @@
       position: relative;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-min-width-px) {
       display: flex;
       border: {
         bottom: 1px solid $main-border-color;
@@ -148,12 +148,12 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       display: block;
       margin-bottom: 16px;
     }
     &::before {
-      @media (max-width: 767px) {
+      @media (max-width: $mobile-max-width-px) {
         color: $second-text-color;
         font-family: TT Lakes;
         font-size: 14px;
@@ -171,18 +171,14 @@
       right: 12px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       position: absolute;
       right: 16px;
       bottom: 16px;
     }
 
-    @media (min-width: 768px) {
-      --price-table__maket-element-width-px-value: 119;
-      width: calc(
-        var(--price-table__maket-element-width-px-value) /
-          var(--price-table__maket-width-px-value) * 100vw
-      );
+    @media (min-width: $tablet-min-width-px) {
+      width: 119px;
     }
   }
 

@@ -10,7 +10,7 @@
     height: 90px;
     overflow: hidden;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-min-width-px) {
       height: 160px;
     }
   }

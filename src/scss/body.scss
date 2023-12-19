@@ -3,6 +3,7 @@
 
 .body {
   @include geometry-reset;
+  overflow-x: hidden;
   background: $main-background-color;
   height: 100vh;
 
@@ -12,7 +13,7 @@
   }
 
   &__header {
-    @media (min-width: 1440px) {
+    @media (min-width: $desktop-min-width-px) {
       position: absolute;
       top: 0;
       right: 0;
@@ -20,8 +21,9 @@
   }
 
   &__content {
-    @media (min-width: 1440px) {
-      width: calc(min(1440px, 100vw) - 320px);
+    @media (min-width: $desktop-min-width-px) {
+      width: $desktop-min-width-px - 320px;
+      // transform: translateX(320px);
       margin-left: 320px;
     }
   }

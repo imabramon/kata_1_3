@@ -1,0 +1,11 @@
+$desktop-min-width: 1440;
+$tablet-max-width: $desktop-min-width - 1;
+$tablet-min-width: 768;
+$mobile-max-width: $tablet-min-width - 1;
+$mobile-min-width: 320;
+
+$desktop-min-width-px: $desktop-min-width * 1px;
+$tablet-max-width-px: $tablet-max-width * 1px;
+$tablet-min-width-px: $tablet-min-width * 1px;
+$mobile-max-width-px: $mobile-max-width * 1px;
+$mobile-min-width-px: $mobile-min-width * 1px;

@@ -14,6 +14,10 @@
   @return css-function(clamp, $values);
 }
 
+@function css-calc($values...) {
+  @return css-function(calc, $values);
+}
+
 @function force-production($a, $b) {
   @return $a * $b;
 }

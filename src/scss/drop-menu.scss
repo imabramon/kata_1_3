@@ -56,7 +56,7 @@
     z-index: unset;
 
     & > .drop-menu__content-out-button {
-      @media (min-width: 768px) {
+      @media (min-width: $tablet-min-width-px) {
         left: 0;
       }
     }
@@ -94,7 +94,7 @@
   }
 
   &__content-out-button {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-min-width-px) {
       position: absolute;
       top: 32px;
       left: -72px;

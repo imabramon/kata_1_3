@@ -21,13 +21,13 @@
       bottom: 24px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       margin-top: 32px;
     }
   }
 
   &__close-button {
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       margin-left: 16px;
     }
   }

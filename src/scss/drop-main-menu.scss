@@ -1,6 +1,7 @@
 @import 'mixins';
 @import './drop-menu.scss';
-
+@import './screen-sizes.scss';
+@debug $desktop-min-width * 1px;
 .drop-main-menu {
   display: flex;
   flex-direction: column;
@@ -9,9 +10,9 @@
 
   @include drop-menu__set-orentation('right');
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-min-width-px) {
     position: fixed !important;
-    left: calc((100vw - 1440px) / 2) !important;
+    left: calc((100vw - #{$desktop-min-width-px}) / 2) !important;
     box-shadow: none !important;
   }
 
@@ -101,7 +102,7 @@
   &__close-button {
     margin-right: 17px;
 
-    @media (min-width: 1440px) {
+    @media (min-width: $desktop-min-width-px) {
       display: none !important;
     }
   }
@@ -139,7 +140,7 @@
     }
 
     &--closed {
-      @media (min-width: 1440px) {
+      @media (min-width: $desktop-min-width-px) {
         left: var(--drop-menu__opened-left);
         right: var(--drop-menu__opened-right);
       }

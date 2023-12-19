@@ -30,7 +30,7 @@
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
     height: fit-content;
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-max-width-px) {
       letter-spacing: 0.4px;
     }
     vertical-align: middle;

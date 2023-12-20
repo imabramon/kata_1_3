@@ -430,7 +430,8 @@
     var(--drop-menu__box-shadow-orentation) *
       var(--drop-menu__box-shadow-offset-size)
   );
-  width: min(100vw, 320px);
+  --dropm-menu__close-shift: -100vw;
+  width: 100vw;
   height: 100%;
   position: fixed;
   top: 0;
@@ -439,16 +440,22 @@
   background-color: white;
   z-index: 3;
   box-shadow: var(--drop-menu__box-shadow-ofset-size-value) 0px 52px 0px rgba(14, 24, 80, 0.2); }
+  @media (min-width: 768px) {
+    .drop-menu {
+      --dropm-menu__close-shift: -320px; } }
+  @media (min-width: 768px) {
+    .drop-menu {
+      width: 320px; } }
   .drop-menu--type--right {
     transition: left 0.5s ease-out;
-    --drop-menu__closed-left: -320px;
+    --drop-menu__closed-left: var(--dropm-menu__close-shift);
     --drop-menu__closed-right: unset;
     --drop-menu__opened-left: 0;
     --drop-menu__opened-right: unset; }
   .drop-menu--type--left {
     transition: right 0.5s ease-out;
     --drop-menu__closed-left: unset;
-    --drop-menu__closed-right: -320px;
+    --drop-menu__closed-right: var(--dropm-menu__close-shift);
     --drop-menu__opened-left: unset;
     --drop-menu__opened-right: 0px; }
   .drop-menu--closed {
@@ -469,6 +476,8 @@
     z-index: 2;
     pointer-events: none;
     transition: all 0.5s ease-in-out; }
+  .drop-menu__element-to-blur--blurred > *:not(:is(.drop-menu, .drop-menu *)) {
+    pointer-events: none; }
   .drop-menu__element-to-blur--blurred::after {
     content: '';
     position: fixed;
@@ -938,7 +947,8 @@
     var(--drop-menu__box-shadow-orentation) *
       var(--drop-menu__box-shadow-offset-size)
   );
-  width: min(100vw, 320px);
+  --dropm-menu__close-shift: -100vw;
+  width: 100vw;
   height: 100%;
   position: fixed;
   top: 0;
@@ -947,16 +957,22 @@
   background-color: white;
   z-index: 3;
   box-shadow: var(--drop-menu__box-shadow-ofset-size-value) 0px 52px 0px rgba(14, 24, 80, 0.2); }
+  @media (min-width: 768px) {
+    .drop-menu {
+      --dropm-menu__close-shift: -320px; } }
+  @media (min-width: 768px) {
+    .drop-menu {
+      width: 320px; } }
   .drop-menu--type--right {
     transition: left 0.5s ease-out;
-    --drop-menu__closed-left: -320px;
+    --drop-menu__closed-left: var(--dropm-menu__close-shift);
     --drop-menu__closed-right: unset;
     --drop-menu__opened-left: 0;
     --drop-menu__opened-right: unset; }
   .drop-menu--type--left {
     transition: right 0.5s ease-out;
     --drop-menu__closed-left: unset;
-    --drop-menu__closed-right: -320px;
+    --drop-menu__closed-right: var(--dropm-menu__close-shift);
     --drop-menu__opened-left: unset;
     --drop-menu__opened-right: 0px; }
   .drop-menu--closed {
@@ -977,6 +993,8 @@
     z-index: 2;
     pointer-events: none;
     transition: all 0.5s ease-in-out; }
+  .drop-menu__element-to-blur--blurred > *:not(:is(.drop-menu, .drop-menu *)) {
+    pointer-events: none; }
   .drop-menu__element-to-blur--blurred::after {
     content: '';
     position: fixed;
@@ -1038,7 +1056,8 @@
     var(--drop-menu__box-shadow-orentation) *
       var(--drop-menu__box-shadow-offset-size)
   );
-  width: min(100vw, 320px);
+  --dropm-menu__close-shift: -100vw;
+  width: 100vw;
   height: 100%;
   position: fixed;
   top: 0;
@@ -1047,16 +1066,22 @@
   background-color: white;
   z-index: 3;
   box-shadow: var(--drop-menu__box-shadow-ofset-size-value) 0px 52px 0px rgba(14, 24, 80, 0.2); }
+  @media (min-width: 768px) {
+    .drop-menu {
+      --dropm-menu__close-shift: -320px; } }
+  @media (min-width: 768px) {
+    .drop-menu {
+      width: 320px; } }
   .drop-menu--type--right {
     transition: left 0.5s ease-out;
-    --drop-menu__closed-left: -320px;
+    --drop-menu__closed-left: var(--dropm-menu__close-shift);
     --drop-menu__closed-right: unset;
     --drop-menu__opened-left: 0;
     --drop-menu__opened-right: unset; }
   .drop-menu--type--left {
     transition: right 0.5s ease-out;
     --drop-menu__closed-left: unset;
-    --drop-menu__closed-right: -320px;
+    --drop-menu__closed-right: var(--dropm-menu__close-shift);
     --drop-menu__opened-left: unset;
     --drop-menu__opened-right: 0px; }
   .drop-menu--closed {
@@ -1077,6 +1102,8 @@
     z-index: 2;
     pointer-events: none;
     transition: all 0.5s ease-in-out; }
+  .drop-menu__element-to-blur--blurred > *:not(:is(.drop-menu, .drop-menu *)) {
+    pointer-events: none; }
   .drop-menu__element-to-blur--blurred::after {
     content: '';
     position: fixed;

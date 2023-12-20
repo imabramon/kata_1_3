@@ -1,10 +1,10 @@
 export function initDropMenu(object) {
-  function blurCloseFunction(evt) {
-    if (evt.skipThisClick) {
+  function blurCloseFunction(event) {
+    if (event.skipThisClick) {
       return
     }
 
-    if (evt.target.closest(`.${menuObeject.menuClass}`)) {
+    if (event.target.closest(`.${menuObeject.menuClass}`)) {
       return
     }
 
@@ -22,7 +22,8 @@ export function initDropMenu(object) {
     close: function () {
       this.menu.classList.add(this.menuClosedClass)
       this.elementToBlur.classList.remove(this.blurClass)
-      this.elementToBlur.removeEventListener('click', blurCloseFunction)
+      this.elementToBlur.style.pointerEvents = 'normal'
+      this.elementToBlur.removeEventListener('click', blurCloseFunction, true)
       this.state = false
     },
 

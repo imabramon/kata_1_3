@@ -85,9 +85,9 @@
     }
 
     &--blurred {
-      & * {
+      & > *:not(:is(.drop-menu, .drop-menu *)) {
         //sorry
-        // pointer-events: none;
+        pointer-events: none;
       }
 
       &::after {

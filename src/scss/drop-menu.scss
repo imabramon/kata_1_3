@@ -18,8 +18,15 @@
     var(--drop-menu__box-shadow-orentation) *
       var(--drop-menu__box-shadow-offset-size)
   );
+  --dropm-menu__close-shift: -100vw;
+  @media (min-width: $tablet-min-width-px) {
+    --dropm-menu__close-shift: -320px;
+  }
 
-  width: css-min(100vw, 320px);
+  width: 100vw;
+  @media (min-width: $tablet-min-width-px) {
+    width: 320px;
+  }
   height: 100%;
   position: fixed;
 
@@ -35,7 +42,7 @@
   &--type-- {
     &right {
       transition: left 0.5s ease-out;
-      --drop-menu__closed-left: -320px;
+      --drop-menu__closed-left: var(--dropm-menu__close-shift);
       --drop-menu__closed-right: unset;
       --drop-menu__opened-left: 0;
       --drop-menu__opened-right: unset;
@@ -44,7 +51,7 @@
     &left {
       transition: right 0.5s ease-out;
       --drop-menu__closed-left: unset;
-      --drop-menu__closed-right: -320px;
+      --drop-menu__closed-right: var(--dropm-menu__close-shift);
       --drop-menu__opened-left: unset;
       --drop-menu__opened-right: 0px;
     }
